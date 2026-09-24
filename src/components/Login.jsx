@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Login.css";
-import farmersImage from '../assets/farmers.png';
+import farmersImage from "../assets/farmers.png";
 import { useNavigate } from "react-router-dom";
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -102,19 +102,12 @@ function LoginPage() {
         <div className="form-side">
           {loggedInUser ? (
             <>
-              <p className="welcome">Welcome</p>
-              <h1>Signed In</h1>
-              <p className="signed-in-text">
-                You are signed in as <b>{loggedInUser.email}</b>. Your login
-                stays saved in this browser until you sign out.
+              <p>
+                Jadel since you are in charge of the routing you will take it
+                from here and route the user to the home page when the user has
+                crated an account
               </p>
-              <button
-                className="green-btn"
-                type="button"
-                onClick={handleSignOut}
-              >
-                Sign out
-              </button>
+              useNavigate("");
             </>
           ) : (
             <>
@@ -176,8 +169,7 @@ function LoginPage() {
                         "Forgot password is only a demo. Use the password you saved.",
                       )
                     }
-                  >
-                  </button>
+                  ></button>
                 )}
 
                 <button className="green-btn" type="submit">
@@ -201,7 +193,7 @@ function LoginPage() {
                   </>
                 ) : (
                   <>
-                    Don&apos;t have an account ?{" "}
+                    Don't have an account ?{" "}
                     <button
                       type="button"
                       onClick={() => {
@@ -219,9 +211,7 @@ function LoginPage() {
         </div>
 
         <div className="promo-side">
-          <h3 className="brand">
-            Fresh Find
-          </h3>
+          <h3 className="brand">Fresh Find</h3>
           <img src={farmersImage} alt="Farmers with fresh food" />
           <h2>Get the best premium food</h2>
           <p>
