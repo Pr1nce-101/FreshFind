@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #0d2310;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.logo1{
+    align-items: start;
+    height: 70px;
+    width: auto;
+}
+.logo2{
+    align-items: start;
+    height: 40px;
+    width: auto;
+}
+.FF-logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li{
+    color: white;
+    font-size: large;
+}
+.btn-login{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 50px;
+    color: #0d2310;
+    font-size: 100%;
+}
