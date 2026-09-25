@@ -2,6 +2,22 @@ import ProduceCard from './ProduceCard';
 import MarketCard from './MarketCard';
 import './ProduceMarketBookmark_css/cards.css';
 
+/**
+ * BookMark: Displays everything the user has bookmarked, both produce and markets by reusing ProduceCard 
+ * and MarketCard directly, so each bookmarked item still opens its own full detail view through the
+ * View Full Details/ View Market Details buttons.
+ *
+ * Properties:
+ *  - bookmarkedProduce (array): produce objects, same shape ProduceCard expects
+ * 
+ *  - bookmarkedMarkets (array): market objects, same shape MarketCard expects
+ * 
+ *  - onToggleProduceBookmark (fn(produce)): passed through to each ProduceCard
+ * 
+ *  - onToggleMarketBookmark (fn(market)): passed through to each MarketCard
+ * 
+ * note: fn means function
+ */
 export default function BookMark({
   bookmarkedProduce = [],
   bookmarkedMarkets = [],

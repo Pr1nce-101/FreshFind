@@ -1,9 +1,40 @@
+import styles from "../styles/MarketDirectory.module.css"
 
-export default function FilterBar(
-    area, setArea,
-    days, setDays,
-    produceTypes, setProduceTypes
-){
+const AREAS = [
+    "All",
+    "Wuse Central Market",
+    "Riverside District"
+];
+
+const DAYS = [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+];
+
+const PRODUCE_TYPES = [
+  "organic",
+  "fruits",
+  "vegetables",
+  "processed",
+  "herbs",
+  "fish",
+  "grains",
+  "meat"
+];
+
+export default function FilterBar({
+    area,
+    setArea,
+    days,
+    setDays,
+    produceTypes,
+    setProduceTypes
+}) {
 
     function toggleValue(list, value, setList) {
         if (list.includes(value)) {
@@ -19,25 +50,30 @@ export default function FilterBar(
         setProduceTypes([]);
     }
 
+    
+
     return(
         <>
-        <aside>
-            <div>Filter Markets</div>
+        <aside className={styles.sidebar}>
+            <div className={styles.heading}>Filter Markets</div>
 
-            <div>
-                <div>Area / Location</div>
-                <select>
+            <div className={styles.group}>
+                <div className={styles.label}>Area / Location</div>
+                <select
+                    className={styles.select}
+                    value={area}
+                    onChange={(e) => setArea(e.target.value)}>
                     {AREAS.map((a) => (
                         <option key={a} value={a}>{a}</option>
                     ))}
                 </select>
             </div>
 
-            <div>
-                <div>Days of the Week</div>
-                <div>
+            <div className={styles.group}>
+                <div className={styles.label}>Days of the Week</div>
+                <div className={styles.checkboxGrid}>
                 {DAYS.map((day) => (
-                    <label key={day}>
+                    <label key={day} className={styles.checkboxItem}>
                     <input
                         type="checkbox"
                         checked={days.includes(day)}
@@ -49,11 +85,11 @@ export default function FilterBar(
                 </div>
             </div>
 
-            <div>
-                <div>Days of the Week</div>
-                <div>
-                {TYPES.map((type) => (
-                    <label key={type}>
+            <div className={styles.group}>
+                <label className={styles.label}>Produce Type</label>
+                <div className={styles.checkboxColumn}>
+                {PRODUCE_TYPES.map((type) => (
+                    <label key={type} className={styles.checkboxItem}>
                     <input
                         type="checkbox"
                         checked={produceTypes.includes(type)}
@@ -66,7 +102,8 @@ export default function FilterBar(
             </div>
 
             <button 
-                onClick={clearFilters}>
+                onClick={clearFilters}
+                className={styles.clearButton}>
                     Clear Filters
             </button>
         </aside>

@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import pic1 from '../images/logo.png'
 import pic2 from '../images/logo-text.png'
 import '../styles/fresh.css'
+import MarketDirectory from '../pages/MarketDirectory';
 
 
 function Navbar() {
@@ -20,7 +21,7 @@ function Navbar() {
         <ul className='nav-links' style={{listStyleType: 'none'}}>
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/marketdetails">Find a Market</NavLink></li>
-          <li><NavLink to="/directory">Directory</NavLink></li>
+          <li><NavLink to="markets">Directory</NavLink></li>
           <li><NavLink to="/produce">Produce Guide</NavLink></li>
           <li><NavLink to="/about">About Us</NavLink></li>
           <li><NavLink to="/contact">Contact Us</NavLink></li>

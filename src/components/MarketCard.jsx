@@ -7,11 +7,11 @@ const CATEGORY_ICONS = {
   organic: '🌱',
   fruits: '🍎',
   vegetables: '🥕',
-  livestock: '🐄',
-  birds: '🐓',
+  processed: '🥫',
+  herbs: '🌿',
   fish: '🐟',
-  dairy: '🥛',
-  flowers: '🌸',
+  grains: '🌿',
+  meat: '🥩',
 };
 
 /**

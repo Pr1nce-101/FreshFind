@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "m1",
+    "name": "Wuse Central Market",
+    "image": "/images/markets/wuse-central-market.jpg",
+    "location": "Wuse Zone 5",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Tue",
+        "open": "6:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sat",
+        "open": "8:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "fruits",
+      "organic",
+      "fish",
+      "vegetables"
+    ],
+    "vendors": [
+      {
+        "id": "v1-1",
+        "name": "Amina's Fresh Produce",
+        "description": "Local vendor supplying fresh organic produce to Wuse Zone 5 residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p1-1",
+        "name": "Watermelons",
+        "image": "/images/produce/watermelons.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p1-2",
+        "name": "Dried Stockfish",
+        "image": "/images/produce/dried-stockfish.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m2",
+    "name": "Garki Green Market",
+    "image": "/images/markets/garki-green-market.jpg",
+    "location": "Garki Area 3",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Tue",
+        "open": "6:00 AM",
+        "close": "3:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "6:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "7:00 AM",
+        "close": "1:00 PM"
+      }
+    ],
+    "categories": [
+      "herbs",
+      "grains",
+      "organic"
+    ],
+    "vendors": [
+      {
+        "id": "v2-1",
+        "name": "Tunde's Herb Garden",
+        "description": "Local vendor supplying fresh grains produce to Garki Area 3 residents."
+      },
+      {
+        "id": "v2-2",
+        "name": "Amina's Grain House",
+        "description": "Local vendor supplying fresh organic produce to Garki Area 3 residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p2-1",
+        "name": "Beans",
+        "image": "/images/produce/beans.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p2-2",
+        "name": "Bitter Leaf",
+        "image": "/images/produce/bitter-leaf.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m3",
+    "name": "Maitama Fresh Market",
+    "image": "/images/markets/maitama-fresh-market.jpg",
+    "location": "Maitama District",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "7:00 AM",
+        "close": "3:00 PM"
+      },
+      {
+        "day": "Tue",
+        "open": "7:00 AM",
+        "close": "3:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "6:00 AM",
+        "close": "3:00 PM"
+      }
+    ],
+    "categories": [
+      "fruits",
+      "organic"
+    ],
+    "vendors": [
+      {
+        "id": "v3-1",
+        "name": "Bala's Family Stall",
+        "description": "Local vendor supplying fresh fruits produce to Maitama District residents."
+      },
+      {
+        "id": "v3-2",
+        "name": "Chioma's Organics",
+        "description": "Local vendor supplying fresh fruits produce to Maitama District residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p3-1",
+        "name": "Organic Spinach",
+        "image": "/images/produce/organic-spinach.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p3-2",
+        "name": "Mangoes",
+        "image": "/images/produce/mangoes.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m4",
+    "name": "Asokoro Farmers Market",
+    "image": "/images/markets/asokoro-farmers-market.jpg",
+    "location": "Asokoro",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "6:00 AM",
+        "close": "3:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "6:00 AM",
+        "close": "6:00 PM"
+      },
+      {
+        "day": "Thu",
+        "open": "7:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "fish",
+      "grains",
+      "organic",
+      "fruits"
+    ],
+    "vendors": [
+      {
+        "id": "v4-1",
+        "name": "Funke's Organics",
+        "description": "Local vendor supplying fresh grains produce to Asokoro residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p4-1",
+        "name": "Organic Spinach",
+        "image": "/images/produce/organic-spinach.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p4-2",
+        "name": "Watermelons",
+        "image": "/images/produce/watermelons.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p4-3",
+        "name": "Maize",
+        "image": "/images/produce/maize.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p4-4",
+        "name": "Fresh Catfish",
+        "image": "/images/produce/fresh-catfish.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m5",
+    "name": "Gwarinpa Produce Market",
+    "image": "/images/markets/gwarinpa-produce-market.jpg",
+    "location": "Gwarinpa Estate",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Thu",
+        "open": "8:00 AM",
+        "close": "6:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "8:00 AM",
+        "close": "3:00 PM"
+      }
+    ],
+    "categories": [
+      "vegetables",
+      "grains"
+    ],
+    "vendors": [
+      {
+        "id": "v5-1",
+        "name": "Amina's Fresh Produce",
+        "description": "Local vendor supplying fresh grains produce to Gwarinpa Estate residents."
+      },
+      {
+        "id": "v5-2",
+        "name": "Musa's Greens",
+        "description": "Local vendor supplying fresh vegetables produce to Gwarinpa Estate residents."
+      },
+      {
+        "id": "v5-3",
+        "name": "Funke's Fisheries",
+        "description": "Local vendor supplying fresh vegetables produce to Gwarinpa Estate residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p5-1",
+        "name": "Garden Eggs",
+        "image": "/images/produce/garden-eggs.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p5-2",
+        "name": "Beans",
+        "image": "/images/produce/beans.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m6",
+    "name": "Jabi Lakeside Market",
+    "image": "/images/markets/jabi-lakeside-market.jpg",
+    "location": "Jabi",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Tue",
+        "open": "8:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "8:00 AM",
+        "close": "3:00 PM"
+      }
+    ],
+    "categories": [
+      "herbs",
+      "grains",
+      "fish",
+      "meat"
+    ],
+    "vendors": [
+      {
+        "id": "v6-1",
+        "name": "Amina's Fresh Produce",
+        "description": "Local vendor supplying fresh fish produce to Jabi residents."
+      },
+      {
+        "id": "v6-2",
+        "name": "Funke's Harvest Co",
+        "description": "Local vendor supplying fresh herbs produce to Jabi residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p6-1",
+        "name": "Mint",
+        "image": "/images/produce/mint.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p6-2",
+        "name": "Goat Meat",
+        "image": "/images/produce/goat-meat.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m7",
+    "name": "Lugbe Community Market",
+    "image": "/images/markets/lugbe-community-market.jpg",
+    "location": "Lugbe",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Fri",
+        "open": "8:00 AM",
+        "close": "2:00 PM"
+      },
+      {
+        "day": "Sat",
+        "open": "8:00 AM",
+        "close": "3:00 PM"
+      }
+    ],
+    "categories": [
+      "meat",
+      "herbs",
+      "fruits",
+      "vegetables"
+    ],
+    "vendors": [
+      {
+        "id": "v7-1",
+        "name": "Musa's Greens",
+        "description": "Local vendor supplying fresh vegetables produce to Lugbe residents."
+      },
+      {
+        "id": "v7-2",
+        "name": "Yusuf's Grain House",
+        "description": "Local vendor supplying fresh meat produce to Lugbe residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p7-1",
+        "name": "Bitter Leaf",
+        "image": "/images/produce/bitter-leaf.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p7-2",
+        "name": "Goat Meat",
+        "image": "/images/produce/goat-meat.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m8",
+    "name": "Kubwa Family Market",
+    "image": "/images/markets/kubwa-family-market.jpg",
+    "location": "Kubwa",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "7:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "8:00 AM",
+        "close": "2:00 PM"
+      }
+    ],
+    "categories": [
+      "organic",
+      "meat"
+    ],
+    "vendors": [
+      {
+        "id": "v8-1",
+        "name": "Musa's Grain House",
+        "description": "Local vendor supplying fresh organic produce to Kubwa residents."
+      },
+      {
+        "id": "v8-2",
+        "name": "Yusuf's Organics",
+        "description": "Local vendor supplying fresh meat produce to Kubwa residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p8-1",
+        "name": "Goat Meat",
+        "image": "/images/produce/goat-meat.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p8-2",
+        "name": "Organic Kale",
+        "image": "/images/produce/organic-kale.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m9",
+    "name": "Nyanya Harvest Market",
+    "image": "/images/markets/nyanya-harvest-market.jpg",
+    "location": "Nyanya",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Sat",
+        "open": "8:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "6:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "fish",
+      "processed",
+      "grains"
+    ],
+    "vendors": [
+      {
+        "id": "v9-1",
+        "name": "Tunde's Fresh Produce",
+        "description": "Local vendor supplying fresh fish produce to Nyanya residents."
+      },
+      {
+        "id": "v9-2",
+        "name": "Bala's Harvest Co",
+        "description": "Local vendor supplying fresh grains produce to Nyanya residents."
+      },
+      {
+        "id": "v9-3",
+        "name": "Emeka's Organics",
+        "description": "Local vendor supplying fresh processed produce to Nyanya residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p9-1",
+        "name": "Groundnut Oil",
+        "image": "/images/produce/groundnut-oil.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p9-2",
+        "name": "Maize",
+        "image": "/images/produce/maize.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m10",
+    "name": "Karu Roadside Market",
+    "image": "/images/markets/karu-roadside-market.jpg",
+    "location": "Karu",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Tue",
+        "open": "6:00 AM",
+        "close": "6:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "7:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "organic",
+      "fish"
+    ],
+    "vendors": [
+      {
+        "id": "v10-1",
+        "name": "Halima's Farm",
+        "description": "Local vendor supplying fresh organic produce to Karu residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p10-1",
+        "name": "Organic Spinach",
+        "image": "/images/produce/organic-spinach.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p10-2",
+        "name": "Tilapia",
+        "image": "/images/produce/tilapia.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m11",
+    "name": "Utako Weekend Market",
+    "image": "/images/markets/utako-weekend-market.jpg",
+    "location": "Utako",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Fri",
+        "open": "8:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sat",
+        "open": "8:00 AM",
+        "close": "3:00 PM"
+      }
+    ],
+    "categories": [
+      "meat",
+      "fruits",
+      "grains",
+      "vegetables"
+    ],
+    "vendors": [
+      {
+        "id": "v11-1",
+        "name": "Amina's Herb Garden",
+        "description": "Local vendor supplying fresh vegetables produce to Utako residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p11-1",
+        "name": "Pineapples",
+        "image": "/images/produce/pineapples.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p11-2",
+        "name": "Beef Cuts",
+        "image": "/images/produce/beef-cuts.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p11-3",
+        "name": "Sorghum",
+        "image": "/images/produce/sorghum.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p11-4",
+        "name": "Tomatoes",
+        "image": "/images/produce/tomatoes.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m12",
+    "name": "Wuye District Market",
+    "image": "/images/markets/wuye-district-market.jpg",
+    "location": "Wuye",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Fri",
+        "open": "8:00 AM",
+        "close": "3:00 PM"
+      },
+      {
+        "day": "Sat",
+        "open": "7:00 AM",
+        "close": "2:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "8:00 AM",
+        "close": "3:00 PM"
+      }
+    ],
+    "categories": [
+      "organic",
+      "herbs"
+    ],
+    "vendors": [
+      {
+        "id": "v12-1",
+        "name": "Funke's Fisheries",
+        "description": "Local vendor supplying fresh organic produce to Wuye residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p12-1",
+        "name": "Bitter Leaf",
+        "image": "/images/produce/bitter-leaf.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p12-2",
+        "name": "Organic Kale",
+        "image": "/images/produce/organic-kale.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m13",
+    "name": "Jahi Organic Market",
+    "image": "/images/markets/jahi-organic-market.jpg",
+    "location": "Jahi",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "6:00 AM",
+        "close": "3:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "7:00 AM",
+        "close": "2:00 PM"
+      }
+    ],
+    "categories": [
+      "fruits",
+      "organic",
+      "herbs",
+      "meat"
+    ],
+    "vendors": [
+      {
+        "id": "v13-1",
+        "name": "Yusuf's Family Stall",
+        "description": "Local vendor supplying fresh fruits produce to Jahi residents."
+      },
+      {
+        "id": "v13-2",
+        "name": "Musa's Meat Corner",
+        "description": "Local vendor supplying fresh herbs produce to Jahi residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p13-1",
+        "name": "Pineapples",
+        "image": "/images/produce/pineapples.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p13-2",
+        "name": "Goat Meat",
+        "image": "/images/produce/goat-meat.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p13-3",
+        "name": "Organic Spinach",
+        "image": "/images/produce/organic-spinach.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p13-4",
+        "name": "Uziza Leaves",
+        "image": "/images/produce/uziza-leaves.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m14",
+    "name": "Life Camp Fresh Stop",
+    "image": "/images/markets/life-camp-fresh-stop.jpg",
+    "location": "Life Camp",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "8:00 AM",
+        "close": "6:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "7:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sat",
+        "open": "6:00 AM",
+        "close": "3:00 PM"
+      }
+    ],
+    "categories": [
+      "processed",
+      "fish",
+      "grains"
+    ],
+    "vendors": [
+      {
+        "id": "v14-1",
+        "name": "Musa's Family Stall",
+        "description": "Local vendor supplying fresh processed produce to Life Camp residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p14-1",
+        "name": "Fresh Catfish",
+        "image": "/images/produce/fresh-catfish.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p14-2",
+        "name": "Sorghum",
+        "image": "/images/produce/sorghum.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p14-3",
+        "name": "Palm Oil",
+        "image": "/images/produce/palm-oil.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m15",
+    "name": "Katampe Hilltop Market",
+    "image": "/images/markets/katampe-hilltop-market.jpg",
+    "location": "Katampe",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "6:00 AM",
+        "close": "2:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "8:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "7:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "vegetables",
+      "processed",
+      "fruits",
+      "organic"
+    ],
+    "vendors": [
+      {
+        "id": "v15-1",
+        "name": "Grace's Organics",
+        "description": "Local vendor supplying fresh processed produce to Katampe residents."
+      },
+      {
+        "id": "v15-2",
+        "name": "Ngozi's Organics",
+        "description": "Local vendor supplying fresh organic produce to Katampe residents."
+      },
+      {
+        "id": "v15-3",
+        "name": "Amina's Organics",
+        "description": "Local vendor supplying fresh fruits produce to Katampe residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p15-1",
+        "name": "Palm Oil",
+        "image": "/images/produce/palm-oil.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p15-2",
+        "name": "Organic Kale",
+        "image": "/images/produce/organic-kale.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p15-3",
+        "name": "Bell Peppers",
+        "image": "/images/produce/bell-peppers.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m16",
+    "name": "Dutse Alhaji Market",
+    "image": "/images/markets/dutse-alhaji-market.jpg",
+    "location": "Dutse Alhaji",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Tue",
+        "open": "7:00 AM",
+        "close": "3:00 PM"
+      },
+      {
+        "day": "Sat",
+        "open": "7:00 AM",
+        "close": "1:00 PM"
+      }
+    ],
+    "categories": [
+      "fish",
+      "vegetables",
+      "fruits"
+    ],
+    "vendors": [
+      {
+        "id": "v16-1",
+        "name": "Tunde's Meat Corner",
+        "description": "Local vendor supplying fresh vegetables produce to Dutse Alhaji residents."
+      },
+      {
+        "id": "v16-2",
+        "name": "Musa's Meat Corner",
+        "description": "Local vendor supplying fresh vegetables produce to Dutse Alhaji residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p16-1",
+        "name": "Smoked Mackerel",
+        "image": "/images/produce/smoked-mackerel.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p16-2",
+        "name": "Okra",
+        "image": "/images/produce/okra.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m17",
+    "name": "Mabushi Local Market",
+    "image": "/images/markets/mabushi-local-market.jpg",
+    "location": "Mabushi",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "7:00 AM",
+        "close": "2:00 PM"
+      },
+      {
+        "day": "Fri",
+        "open": "7:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "8:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "grains",
+      "vegetables"
+    ],
+    "vendors": [
+      {
+        "id": "v17-1",
+        "name": "Yusuf's Meat Corner",
+        "description": "Local vendor supplying fresh grains produce to Mabushi residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p17-1",
+        "name": "Okra",
+        "image": "/images/produce/okra.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p17-2",
+        "name": "Rice",
+        "image": "/images/produce/rice.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m18",
+    "name": "Gwagwalada Grain Market",
+    "image": "/images/markets/gwagwalada-grain-market.jpg",
+    "location": "Gwagwalada",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Wed",
+        "open": "8:00 AM",
+        "close": "2:00 PM"
+      },
+      {
+        "day": "Thu",
+        "open": "6:00 AM",
+        "close": "6:00 PM"
+      },
+      {
+        "day": "Sun",
+        "open": "8:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "herbs",
+      "meat"
+    ],
+    "vendors": [
+      {
+        "id": "v18-1",
+        "name": "Grace's Organics",
+        "description": "Local vendor supplying fresh meat produce to Gwagwalada residents."
+      },
+      {
+        "id": "v18-2",
+        "name": "Halima's Meat Corner",
+        "description": "Local vendor supplying fresh herbs produce to Gwagwalada residents."
+      },
+      {
+        "id": "v18-3",
+        "name": "Funke's Family Stall",
+        "description": "Local vendor supplying fresh herbs produce to Gwagwalada residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p18-1",
+        "name": "Suya Spice Meat",
+        "image": "/images/produce/suya-spice-meat.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p18-2",
+        "name": "Uziza Leaves",
+        "image": "/images/produce/uziza-leaves.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m19",
+    "name": "Bwari Village Market",
+    "image": "/images/markets/bwari-village-market.jpg",
+    "location": "Bwari",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Mon",
+        "open": "6:00 AM",
+        "close": "2:00 PM"
+      },
+      {
+        "day": "Tue",
+        "open": "6:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "6:00 AM",
+        "close": "2:00 PM"
+      }
+    ],
+    "categories": [
+      "vegetables",
+      "fish",
+      "organic"
+    ],
+    "vendors": [
+      {
+        "id": "v19-1",
+        "name": "Chioma's Fresh Produce",
+        "description": "Local vendor supplying fresh fish produce to Bwari residents."
+      },
+      {
+        "id": "v19-2",
+        "name": "Halima's Herb Garden",
+        "description": "Local vendor supplying fresh vegetables produce to Bwari residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p19-1",
+        "name": "Organic Spinach",
+        "image": "/images/produce/organic-spinach.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p19-2",
+        "name": "Smoked Mackerel",
+        "image": "/images/produce/smoked-mackerel.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p19-3",
+        "name": "Tomatoes",
+        "image": "/images/produce/tomatoes.jpg",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "m20",
+    "name": "Kuje Countryside Market",
+    "image": "/images/markets/kuje-countryside-market.jpg",
+    "location": "Kuje",
+    "openNow": false,
+    "hours": [
+      {
+        "day": "Tue",
+        "open": "6:00 AM",
+        "close": "6:00 PM"
+      },
+      {
+        "day": "Fri",
+        "open": "6:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "processed",
+      "fruits",
+      "fish"
+    ],
+    "vendors": [
+      {
+        "id": "v20-1",
+        "name": "Yusuf's Meat Corner",
+        "description": "Local vendor supplying fresh fish produce to Kuje residents."
+      },
+      {
+        "id": "v20-2",
+        "name": "Tunde's Grain House",
+        "description": "Local vendor supplying fresh fish produce to Kuje residents."
+      },
+      {
+        "id": "v20-3",
+        "name": "Grace's Meat Corner",
+        "description": "Local vendor supplying fresh fruits produce to Kuje residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p20-1",
+        "name": "Bananas",
+        "image": "/images/produce/bananas.jpg",
+        "inStock": true
+      },
+      {
+        "id": "p20-2",
+        "name": "Groundnut Oil",
+        "image": "/images/produce/groundnut-oil.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p20-3",
+        "name": "Tilapia",
+        "image": "/images/produce/tilapia.jpg",
+        "inStock": false
+      }
+    ]
+  },
+  {
+    "id": "m21",
+    "name": "Apo Legislative Market",
+    "image": "/images/markets/apo-legislative-market.jpg",
+    "location": "Apo",
+    "openNow": true,
+    "hours": [
+      {
+        "day": "Tue",
+        "open": "7:00 AM",
+        "close": "1:00 PM"
+      },
+      {
+        "day": "Wed",
+        "open": "6:00 AM",
+        "close": "2:00 PM"
+      },
+      {
+        "day": "Sat",
+        "open": "6:00 AM",
+        "close": "6:00 PM"
+      }
+    ],
+    "categories": [
+      "processed",
+      "vegetables",
+      "meat"
+    ],
+    "vendors": [
+      {
+        "id": "v21-1",
+        "name": "Ngozi's Harvest Co",
+        "description": "Local vendor supplying fresh processed produce to Apo residents."
+      },
+      {
+        "id": "v21-2",
+        "name": "Halima's Fisheries",
+        "description": "Local vendor supplying fresh vegetables produce to Apo residents."
+      },
+      {
+        "id": "v21-3",
+        "name": "Yusuf's Grain House",
+        "description": "Local vendor supplying fresh vegetables produce to Apo residents."
+      }
+    ],
+    "currentProduce": [
+      {
+        "id": "p21-1",
+        "name": "Cassava Flakes",
+        "image": "/images/produce/cassava-flakes.jpg",
+        "inStock": false
+      },
+      {
+        "id": "p21-2",
+        "name": "Tomatoes",
+        "image": "/images/produce/tomatoes.jpg",
+        "inStock": false
+      }
+    ]
+  }
+]
