@@ -6,12 +6,13 @@ function Navbar() {
   return (
     <nav>
       <div className='nav-items'>
-        <div className='FF-logo'>
+        <div className='logo-container'>
           <img src={pic1} alt="FreshFind-logo" className='logo1'/>
           <img src={pic2} alt="FreshFind-logo-text" className='logo2'/>
         </div>
 
         <ul className='nav-links' style={{listStyleType: 'none'}}>
+          <li>Home</li>
           <li>Find a Market</li>
           <li>Directory</li>
           <li>Produce Guide</li>
@@ -19,7 +20,7 @@ function Navbar() {
           <li>Contact Us</li>
         </ul>
 
-        <button className='btn-login'>
+        <button className='login-button'>
           <b>Login/Register</b>
         </button>
       </div>
