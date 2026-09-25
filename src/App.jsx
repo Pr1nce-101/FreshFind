@@ -1,8 +1,6 @@
-import React from 'react';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
-
 import Home from "./pages/Home";
 import MarketDirectory from "./pages/MarketDirectory";
 import MarketDetails from "./pages/MarketDetails";
