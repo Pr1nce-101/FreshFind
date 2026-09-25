@@ -11,11 +11,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #FAF7F0;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    color:#2d3748;
 }
-
 nav{
     background-color: #0d2310;
     width: 100%;
@@ -24,32 +20,27 @@ nav{
     position: sticky;
     z-index: 9999;
 }
-
 .logo1{
     align-items: start;
     height: 70px;
     width: auto;
 }
-
 .logo2{
     align-items: start;
     height: 40px;
     width: auto;
 }
-
-.logo-container{
+.FF-logo{
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 .nav-items{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
 }
-
 .nav-links{
     display: flex;
     align-items: center;
@@ -58,262 +49,43 @@ nav{
     padding: 0;
     list-style: none;
 }
-
 .nav-links li{
-    color: white;
-    font-size: large;
-    cursor: pointer;
+    color: #FAF7F0;
+    font-size: 1.05rem;
+    font-weight: 500;
 }
 
-.login-button{
-    height: 50px;
-    width: 150px;
+.nav-links a{
+    color: #FAF7F0;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    border-bottom: none !important;
+    padding-bottom: 4px;
+}
+
+.nav-links a:hover{
+    color: #FFBF00;
+}
+
+.nav-links a.active{
+    color: #FFBF00;
+    border-bottom: 2px solid #FFBF00;
+}
+
+.btn-login{
+    height: 46px;
+    width: 140px;
     border: none;
     border-radius: 50px;
     background-color: #FAF7F0;
     color: #0d2310;
-    font-size: 100%;
-    cursor: pointer;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-repeat: no-repeat;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: white;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    font-size: 30px;
-    max-width: 1300px;
-}
-
-.market-search {
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) auto; 
-  align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border-radius: 16px;
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-.search-option {
-  padding: 4px 8px;
-  border-right: 1px solid #e2e8f0;
-}
-
-.search-option select {
-  width: 100%;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 0.95rem;
-  color: #2d3748;
-  cursor: pointer;
-  padding: 8px 4px;
-}
-
-.search-button {
-  background-color: #d97706;
-  color: #ffffff;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  background-color: #b45309;
-}
-
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;             
-  max-width: auto;              
-  margin: 20px 40px auto 60px;
-  padding: 20px 20px;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  color: #2d3748;
-  margin: 0;
-}
-
-.carousel-buttons {
-  display: flex;                  
-  gap: 12px;
-}
-
-.carousel-button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  border: solid thin grey;
-  background-color: #ffffff;
-  font-size: larger;
-  font-weight: 200px;
-}
-
-.market-image{
-    padding-top: 10px;
-    padding-left: 15px;
-}
-
-.market-image-content{
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-    width: 370px;
-    height: 200px;
-}
-
-.market-list{
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
-}
-
-.market-card{
-    height: 500px;
-    width: 400px;
-    border: #ffffff;
-    border-radius: 80px;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-}
-
-.market-info{
-    margin: 10px 10px;
-    padding: 0 10px;
-}
-
-.market-hours{
-    height: 20px;
-    width: 250px;
-    display: flex;
-    gap: 23px;
-    background-color: #F5EAD4;
-    color: #b45309;
-    border-radius: 100px;
-    justify-items: center;
-    text-align: center;
-    padding: 0 10px;
-}
-
-.market-location{
-    display: flex;
-    margin-left: 10px;
-}
-
-.market-location li{
-    margin-left: 20px;
-}
-
-.location-icon{
-    margin-top: 2px;
-}
-
-.rating-icon{
-    color: gold;
-    fill: currentColor;
-}
-
-.market-review{
-    margin-left: 10px;
-}
-
-.market-tags{
-    top: 50px;
-    transform: translateY(-30%);
-    display: flex;
-    gap: 5px;
-    margin-left: 10px;
-}
-.tag{
-    height: 30px;
-    width: 100px;
-    border-radius: 20px;
-    text-align: center;
-    justify-items: center;
-    padding-top: 5px;
-}
-
-.tag-organic, .tag-handmade, .tag-produce{
-    background-color: #79dd87;
-}
-
-.tag-bakery, .tag-music{
-    background-color: #F5EAD4;
-}
-
-.tag-dairy{
-    background-color: #F5EAD4;
-}
-
-.produce-list{
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
-}
-
-.produce-card{
-    height: 500px;
-    width: 300px;
-    border: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-}
-
-.produce-image{
-    justify-content: center;
-    margin: 50px;
-}
-
-.produce-image-content{
-    width: 200px;
-    height: 200px;
-    align-items: center;
-}
-
-.produce-markets{
-    color: #d97706;
     font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.15s ease;
 }
 
-.season-tag{
-    background-color: #79dd87;
-    height: 30px;
-    width: 100px;
-    border-radius: 20px;
-    text-align: center;
-    justify-items: center;
-    padding-top: 5px;
-}
-
-.produce-info{
-    margin: 10px;
-    padding: 0 0;
+.btn-login:hover{
+    background-color: #FFBF00;
+    transform: translateY(-1px);
 }

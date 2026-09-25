@@ -9,20 +9,21 @@ function Navbar() {
   return (
     <nav>
       <div className='nav-items'>
-        <div className='logo-container'>
+        <div className='FF-logo'>
           <img src={pic1} alt="FreshFind-logo" className='logo1'/>
           <img src={pic2} alt="FreshFind-logo-text" className='logo2'/>
         </div>
 
         <ul className='nav-links' style={{listStyleType: 'none'}}>
-          <li>Find a Market</li>
-          <li>Directory</li>
-          <li>Produce Guide</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/markets">Find a Market</NavLink></li>
+          <li><NavLink to="/directory">Directory</NavLink></li>
+          <li><NavLink to="/produce">Produce Guide</NavLink></li>
+          <li><NavLink to="/about">About Us</NavLink></li>
+          <li><NavLink to="/contact">Contact Us</NavLink></li>
         </ul>
 
-        <button className='login-button'>
+        <button className='btn-login'>
           <b>Login/Register</b>
         </button>
       </div>
