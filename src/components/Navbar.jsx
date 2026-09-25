@@ -24,7 +24,7 @@ function Navbar() {
         </ul>
 
         <button className='btn-login'>
-          <b>Login/Register</b>
+          <b><NavLink to="/login">Login/Register</NavLink></b>
         </button>
       </div>
     </nav>
