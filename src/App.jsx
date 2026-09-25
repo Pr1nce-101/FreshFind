@@ -12,7 +12,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 
 import "./App.css";
-import "./pages/fresh.css";
+import "./styles/fresh.css";
 
 function App() {
   return (

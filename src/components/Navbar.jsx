@@ -1,6 +1,7 @@
 import React from 'react'
 import pic1 from '../images/logo.png'
 import pic2 from '../images/logo-text.png'
+import '../styles/fresh.css'
 
 function Navbar() {
   return (
