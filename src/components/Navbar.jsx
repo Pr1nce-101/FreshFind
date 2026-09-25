@@ -136,7 +136,7 @@ function Navbar() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/markets">Find a Market</NavLink>
+              <NavLink to="/marketsdetails">Find a Market</NavLink>
             </li>
             <li>
               <NavLink to="/directory">Directory</NavLink>
