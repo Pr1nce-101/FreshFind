@@ -1,7 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import pic1 from '../images/logo.png'
 import pic2 from '../images/logo-text.png'
 import '../styles/fresh.css'
+
 
 function Navbar() {
   return (
@@ -13,11 +15,12 @@ function Navbar() {
         </div>
 
         <ul className='nav-links' style={{listStyleType: 'none'}}>
-          <li>Find a Market</li>
-          <li>Directory</li>
-          <li>Produce Guide</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/markets">Find a Market</NavLink></li>
+          <li><NavLink to="/directory">Directory</NavLink></li>
+          <li><NavLink to="/produce">Produce Guide</NavLink></li>
+          <li><NavLink to="/about">About Us</NavLink></li>
+          <li><NavLink to="/contact">Contact Us</NavLink></li>
         </ul>
 
         <button className='btn-login'>
