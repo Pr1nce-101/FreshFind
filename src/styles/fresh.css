@@ -293,70 +293,112 @@ body{
     background-color: #F5EAD4;
 }
 
-.produce-list{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 0 40px 30px;
+.produce-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 40px 40px;
+  flex-wrap: wrap;
 }
 
-.produce-card{
-    height: 500px;
-    width: 300px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.produce-card {
+  width: 280px;
+  min-height: 440px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.produce-card:hover{
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.15);
+.produce-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-.produce-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 240px;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+.produce-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.produce-image-content{
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
+.produce-image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.produce-info{
-    margin: 0;
-    padding: 0 20px 20px;
+.season-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #d1fae5;
+  color: #065f46;
 }
 
-.produce-info h1{
-    font-size: 1.35rem;
-    margin: 10px 0;
+.produce-info {
+  padding: 20px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.produce-markets{
-    color: #d97706;
-    font-weight: 600;
+.produce-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 4px 0;
 }
 
-.season-tag{
-    background-color: #79dd87;
-    height: 30px;
-    width: 200px;
-    border-radius: 20px;
-    text-align: center;
-    justify-items: center;
-    padding-top: 5px;
-    margin-left: 30px;
+.produce-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #8c98a4;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+.produce-desc {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+}
+
+.btn-view-details {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1.5px solid #1a202c;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a202c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-view-details:hover {
+  background-color: #0d2310;
+  color: #ffffff;
 }
 
 .produce-popup-overlay{

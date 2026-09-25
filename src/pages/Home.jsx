@@ -132,31 +132,41 @@ function Home() {
     <button className='see-more-button' onClick={() => navigate('/produce')}>See more →</button>
     </div>
     <div className='produce-list'>
-     {homepageProduce.map((produce) => (
+  {homepageProduce.map((produce) => (
     <div
-        className='produce-card'
-        key={produce.id}
-        onClick={() => setSelectedProduce(produce)}
+      className='produce-card'
+      key={produce.id}
+      onClick={() => setSelectedProduce(produce)}
     >
-        <div className='produce-image'>
-            <img
-                src={produce.image}
-                alt={produce.name}
-                className='produce-image-content'
-            />
-        </div>
+      <div className='produce-image'>
+        <span className='season-tag'>
+          {produce.seasonBadge || 'PEAK SEASON'}
+        </span>
+        <img
+          src={produce.image}
+          alt={produce.name}
+          className='produce-image-content'
+        />
+      </div>
 
-        <div className='produce-info'>
-            <p className='season-tag'>{produce.seasonBadge}</p>
-            <h1>{produce.name}</h1>
-            <p>{produce.briefDescription}</p>
-            <p className='produce-markets'>
-                Find {produce.linkedMarkets.length} Markets selling
-            </p>
-        </div>
+      <div className='produce-info'>
+        <h2 className='produce-title'>{produce.name}</h2>
+        <p className='produce-category'>{produce.category || 'VEGETABLES'}</p>
+        <p className='produce-desc'>{produce.briefDescription}</p>
+        
+        <button 
+          className='btn-view-details'
+          onClick={(e) => {
+            e.stopPropagation();
+            setSelectedProduce(produce);
+          }}
+        >
+          View Full Details
+        </button>
+      </div>
     </div>
-    ))}
-    </div>
+  ))}
+</div>
 
     {selectedProduce && (
     <div
