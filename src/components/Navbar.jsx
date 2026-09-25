@@ -16,7 +16,7 @@ function Navbar() {
 
         <ul className='nav-links' style={{listStyleType: 'none'}}>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/markets">Find a Market</NavLink></li>
+          <li><NavLink to="/marketdetails">Find a Market</NavLink></li>
           <li><NavLink to="/directory">Directory</NavLink></li>
           <li><NavLink to="/produce">Produce Guide</NavLink></li>
           <li><NavLink to="/about">About Us</NavLink></li>
