@@ -54,7 +54,7 @@ export default function Contact() {
                 <span className="icon">✉</span>
                 <div>
                   <p>Email support</p>
-                  <a href="mailto:support@freshfind.app">
+                  <a href="#">
                     support@freshfind.app
                   </a>
                 </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                 <span className="icon">☎</span>
                 <div>
                   <p>Community line</p>
-                  <a href="tel:+18005553737">+1 (800) 555-FRESH</a>
+                  <a href="#">+234111222-FRESH</a>
                 </div>
               </div>
             </div>
