@@ -8,8 +8,6 @@ import bellPepper from '../images/bellepepper1.jpg';
 import broccoli from '../images/broccoli2.jpg';
 import corn from '../images/corn1.jpg';
 import cucumber from '../images/cuccumber1.jpg';
-import sweetPotatoes from '../images/sweet potato2.jpg';
-import honey from '../images/honeycomb 3.jpg';
 
 
 export const produceData = [
@@ -202,46 +200,6 @@ export const produceData = [
     ],
     linkedMarkets: [
       { id: "m1", name: "Green Valley Organic Market", url: "/markets/m1" },
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" }
-    ]
-  },
-  {
-    id: 11,
-    name: "Sweet Potatoes",
-    category: "Vegetables",
-    image: sweetPotatoes,
-    seasonBadge: "In Season Now",
-    briefDescription: "Nutrient-rich, sweet potatoes with a creamy texture.",
-    fullDescription: "These sweet potatoes are perfect for roasting, mashing, or adding to soups and stews.",
-    peakSeasonRange: "September - November",
-    inStock: true,
-    nutritionalFacts: [
-      { label: "Calories", value: "16 kcal" },
-      { label: "Water Content", value: "95%" },
-      { label: "Vitamin K", value: "19% DV" }
-    ],
-    linkedMarkets: [
-      { id: "m1", name: "Riverfront Fresh Produce", url: "/markets/m1" },
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" }
-    ]
-  },
-    {
-    id: 12,
-    name: "Honeycomb",
-    category: "Vegetables",
-    image: honey,
-    seasonBadge: "In Season Now",
-    briefDescription: "Natural, pure honey harvested from local bees.",
-    fullDescription: "Rich and aromatic, this honey is perfect for sweetening teas, baking, or drizzling over yogurt and toast.",
-    peakSeasonRange: "September - November",
-    inStock: true,
-    nutritionalFacts: [
-      { label: "Calories", value: "28 kcal" },
-      { label: "Water Content", value: "95%" },
-      { label: "Vitamin K", value: "19% DV" }
-    ],
-    linkedMarkets: [
-      { id: "m1", name: "Riverfront Fresh Produce", url: "/markets/m1" },
       { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" }
     ]
   }

@@ -1,8 +1,6 @@
 import MarketCard from "../components/MarketCard";
 import FilterBar from "../components/FilterBar";
-import styles from "../styles/MarketDirectory.module.css"
-import { useState } from "react";
-import markets from "../data/markets.json"
+import BookMark from "../components/BookMark";
 
 
 export default function MarketDirectory(){

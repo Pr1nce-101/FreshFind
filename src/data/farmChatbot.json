@@ -1,0 +1,143 @@
+{
+  "welcome": "Hi! I can help you find produce listed by FreshFind and answer common farmers market questions. What are you looking for?",
+  "suggestions": [
+    "What produce is available today?",
+    "When are tomatoes in season?",
+    "How should I store fresh produce?",
+    "Do markets accept cards?"
+  ],
+  "fallback": "I don't have that detail in FreshFind yet. Try asking about produce availability, seasons, nutrition, storage, or market visits. For exact prices, hours, and policies, please contact the market directly.",
+  "faqs": [
+    {
+      "keywords": ["organic", "certified organic", "organic farming"],
+      "answer": "Organic standards depend on the farm and its certification. FreshFind doesn't currently show certification details for every listing, so ask the individual vendor how their produce is grown."
+    },
+    {
+      "keywords": [
+        "local",
+        "locally grown",
+        "where is it grown",
+        "grown nearby",
+        "food miles"
+      ],
+      "answer": "FreshFind focuses on local and regional produce, but farm origins aren't shown for every item yet. Check with the vendor for the farm name and growing location."
+    },
+    {
+      "keywords": [
+        "store produce",
+        "store fresh produce",
+        "how to store",
+        "storing produce",
+        "store vegetables",
+        "store fruit",
+        "keep produce fresh",
+        "keep fresh",
+        "storage",
+        "preserve produce"
+      ],
+      "answer": "Storage depends on the crop. Keep most leafy greens chilled and dry, store potatoes and onions in a cool dark place, and let many tomatoes ripen at room temperature. Ask the grower for crop-specific advice."
+    },
+    {
+      "keywords": [
+        "wash produce",
+        "wash vegetables",
+        "wash fruit",
+        "clean produce",
+        "food safety"
+      ],
+      "answer": "Rinse produce under clean running water before eating or cutting it. Avoid soap or household cleaners, and dry it with a clean towel."
+    },
+    {
+      "keywords": [
+        "season",
+        "seasonal produce",
+        "what is in season",
+        "in season now",
+        "harvest season"
+      ],
+      "answer": "Seasons vary by crop and region. Ask about a specific fruit or vegetable and I can share the peak-season range listed in the FreshFind produce guide."
+    },
+    {
+      "keywords": [
+        "market hours",
+        "opening hours",
+        "open today",
+        "what time",
+        "when does the market open",
+        "when does it close"
+      ],
+      "answer": "Market hours aren't listed consistently in FreshFind yet. Please confirm today's opening and closing times with the market before you travel."
+    },
+    {
+      "keywords": [
+        "market location",
+        "market address",
+        "where is the market",
+        "directions",
+        "parking"
+      ],
+      "answer": "FreshFind links produce to its associated markets, but exact addresses, directions, and parking details aren't available in every listing. Check the market's own page or contact the market before visiting."
+    },
+    {
+      "keywords": [
+        "accept cards",
+        "accept card",
+        "cards",
+        "credit card",
+        "debit card",
+        "cash",
+        "payment",
+        "pay",
+        "snap",
+        "ebt"
+      ],
+      "answer": "Payment options vary by market and vendor, and FreshFind doesn't have confirmed payment details yet. Contact the market to ask whether it accepts cards, cash, SNAP/EBT, or other payment methods."
+    },
+    {
+      "keywords": ["price", "prices", "cost", "how much", "pricing"],
+      "answer": "Prices change by farm, market, and season, and FreshFind doesn't currently list live prices. Please check with the vendor for today's price and available sizes."
+    },
+    {
+      "keywords": ["bring a bag", "shopping bag", "bags", "reusable bag"],
+      "answer": "Bringing a reusable shopping bag is a handy idea. Bag availability and any market rules can vary, so check with the market if you need a specific option."
+    },
+    {
+      "keywords": ["pets", "dogs", "dog friendly", "bring my dog"],
+      "answer": "Pet rules vary by market and local requirements. Please check with the market before bringing a pet."
+    },
+    {
+      "keywords": [
+        "sell at the market",
+        "become a vendor",
+        "farmer vendor",
+        "vendor application",
+        "sell produce"
+      ],
+      "answer": "Vendor applications and requirements are managed by each market. Contact the market directly to ask about applying, fees, and what products it accepts."
+    },
+    {
+      "keywords": [
+        "contact a farmer",
+        "contact the farm",
+        "contact the market",
+        "vendor contact",
+        "phone number"
+      ],
+      "answer": "FreshFind doesn't currently show contact details for every farm or market. Open the linked market listing to see whether its contact information is available."
+    },
+    {
+      "keywords": [
+        "freshness",
+        "how fresh",
+        "picked",
+        "harvested",
+        "when was it picked"
+      ],
+      "answer": "Harvest timing depends on the farm and crop. Ask the vendor when a particular item was picked; FreshFind doesn't currently track harvest dates."
+    },
+    {
+      "keywords": ["allergies", "allergen", "allergy"],
+      "answer": "For allergy concerns, confirm ingredients and handling practices directly with the vendor. FreshFind doesn't track cross-contact or allergen information."
+    }
+  ]
+}
