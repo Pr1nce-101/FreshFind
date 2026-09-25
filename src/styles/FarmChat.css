@@ -1,0 +1,249 @@
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.farm-chat-trigger,
+.farm-chat-close,
+.farm-chat-form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.farm-chat-trigger {
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 15px;
+  border: 1px solid rgba(250, 247, 240, 0.38);
+  border-radius: 24px;
+  background: transparent;
+  color: #faf7f0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.farm-chat-trigger:hover,
+.farm-chat-trigger[aria-expanded="true"] {
+  border-color: #ffbf00;
+  background: rgba(255, 191, 0, 0.12);
+  color: #ffbf00;
+}
+
+.farm-chat-panel {
+  position: fixed;
+  z-index: 10000;
+  right: 22px;
+  bottom: 22px;
+  display: flex;
+  width: min(390px, calc(100vw - 24px));
+  height: min(590px, calc(100dvh - 36px));
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #d9dfd3;
+  border-radius: 12px;
+  background: #fffefa;
+  box-shadow: 0 18px 54px rgba(13, 35, 16, 0.24);
+  color: #243126;
+  animation: farm-chat-enter 180ms ease-out;
+}
+
+.farm-chat-header {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  background: #0d2310;
+  color: #faf7f0;
+}
+
+.farm-chat-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.farm-chat-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffbf00;
+  color: #0d2310;
+}
+
+.farm-chat-brand div {
+  display: grid;
+  gap: 3px;
+}
+
+.farm-chat-brand strong {
+  font-size: 0.98rem;
+}
+
+.farm-chat-brand span:not(.farm-chat-mark) {
+  color: #d8e2d4;
+  font-size: 0.78rem;
+}
+
+.farm-chat-close {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #faf7f0;
+}
+
+.farm-chat-close:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.farm-chat-messages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding: 18px 16px;
+  overscroll-behavior: contain;
+}
+
+.farm-chat-message {
+  max-width: 86%;
+  padding: 11px 13px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.farm-chat-message.bot {
+  align-self: flex-start;
+  border: 1px solid #e4e8df;
+  border-bottom-left-radius: 4px;
+  background: #f2f5ed;
+}
+
+.farm-chat-message.user {
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+  background: #0d2310;
+  color: #fffefa;
+}
+
+.farm-chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 0 16px 14px;
+}
+
+.farm-chat-suggestions button {
+  border: 1px solid #d5dfce;
+  border-radius: 16px;
+  padding: 7px 10px;
+  background: #fffefa;
+  color: #29452c;
+  cursor: pointer;
+  font-size: 0.77rem;
+  text-align: left;
+}
+
+.farm-chat-suggestions button:hover {
+  border-color: #80986e;
+  background: #f2f5ed;
+}
+
+.farm-chat-form {
+  display: flex;
+  gap: 9px;
+  padding: 12px;
+  border-top: 1px solid #e4e8df;
+  background: #fffefa;
+}
+
+.farm-chat-form input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid #d5dfce;
+  border-radius: 7px;
+  padding: 0 12px;
+  background: #fff;
+  color: #243126;
+  font-size: 0.88rem;
+}
+
+.farm-chat-form input:focus-visible {
+  outline: 2px solid #79905e;
+  outline-offset: 1px;
+}
+
+.farm-chat-form button {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border: 0;
+  border-radius: 7px;
+  background: #d97706;
+  color: white;
+}
+
+.farm-chat-form button:hover:not(:disabled) {
+  background: #b45309;
+}
+
+.farm-chat-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+@keyframes farm-chat-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-actions {
+    gap: 7px;
+  }
+
+  .farm-chat-trigger {
+    width: 44px;
+    padding: 0;
+  }
+
+  .farm-chat-trigger span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .farm-chat-panel {
+    right: 12px;
+    bottom: 12px;
+    height: min(590px, calc(100dvh - 24px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .farm-chat-panel {
+    animation: none;
+  }
+}
