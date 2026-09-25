@@ -81,7 +81,7 @@ export default function ProduceCard({
         </div>
       </article>
 
-      {/* Expanded full-detail view */}
+      {/* Expanded full detail view */}
       {expanded && (
         <div
           className="pc-overlay"
