@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom'
 import pic1 from '../images/logo.png'
 import pic2 from '../images/logo-text.png'
@@ -6,6 +7,8 @@ import '../styles/fresh.css'
 
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <nav>
       <div className='nav-items'>
@@ -23,8 +26,8 @@ function Navbar() {
           <li><NavLink to="/contact">Contact Us</NavLink></li>
         </ul>
 
-        <button className='btn-login'>
-          <b><NavLink to="/login">Login/Register</NavLink></b>
+        <button className='btn-login'onClick={() => navigate('/login')}>
+          <b>Login/Register</b>
         </button>
       </div>
     </nav>
