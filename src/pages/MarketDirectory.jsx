@@ -10,6 +10,7 @@ export default function MarketDirectory(){
 
     const [area, setArea] = useState("All");
     const [days, setDays] = useState([]);
+    const AREAS = ["All", ...new Set(markets.map((m) => m.location))];
     const [produceTypes, setProduceTypes] = useState([]);
     const [sortBy, setSortBy] = useState("Next Open Day");
 
@@ -31,33 +32,22 @@ export default function MarketDirectory(){
     return(
         <>
         <div className={styles.pageLayout}>
-      <FilterBar
+          <FilterBar
             area={area}
             setArea={setArea}
+            areaOptions={AREAS}   // new prop
             days={days}
             setDays={setDays}
             produceTypes={produceTypes}
             setProduceTypes={setProduceTypes}
-        />
+          />
 
       <div className={styles.results}>
         <div className={styles.resultsHeader}>
           <p className={styles.resultsCount}>
             Showing {filteredMarkets.length} Market{filteredMarkets.length !== 1 ? "s" : ""}
           </p>
-          <div className={styles.sortWrapper}>
-            <label htmlFor="sort" className={styles.sortLabel}>Sort by</label>
-            <select
-              id="sort"
-              className={styles.sortSelect}
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-            >
-              <option value="Next Open Day">Next Open Day</option>
-              <option value="Alphabetical A-Z">Alphabetical A-Z</option>
-              <option value="Proximity">Proximity</option>
-            </select>
-          </div>
+          
         </div>
 
         <div className={styles.cardGrid}>

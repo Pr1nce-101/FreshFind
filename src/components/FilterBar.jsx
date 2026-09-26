@@ -1,10 +1,5 @@
 import styles from "../styles/MarketDirectory.module.css"
 
-const AREAS = [
-    "All",
-    "Wuse Central Market",
-    "Riverside District"
-];
 
 const DAYS = [
     "Mon",
@@ -30,11 +25,15 @@ const PRODUCE_TYPES = [
 export default function FilterBar({
     area,
     setArea,
+    areaOptions,
     days,
     setDays,
     produceTypes,
     setProduceTypes
 }) {
+
+    
+
 
     function toggleValue(list, value, setList) {
         if (list.includes(value)) {
@@ -59,11 +58,18 @@ export default function FilterBar({
 
             <div className={styles.group}>
                 <div className={styles.label}>Area / Location</div>
-                <select
+                {/* <select
                     className={styles.select}
                     value={area}
                     onChange={(e) => setArea(e.target.value)}>
                     {AREAS.map((a) => (
+                        <option key={a} value={a}>{a}</option>
+                    ))}
+                </select> */}
+                <select 
+                value={area} 
+                onChange={(e) => setArea(e.target.value)}>
+                    {areaOptions.map((a) => (
                         <option key={a} value={a}>{a}</option>
                     ))}
                 </select>

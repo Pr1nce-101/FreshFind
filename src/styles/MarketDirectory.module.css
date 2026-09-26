@@ -68,10 +68,16 @@
 
 /* FilterSidebar.module.css */
 .sidebar {
-  flex: 0 0 220px;
+  flex: 1 1 220px;
+  max-width: 260px;
+  min-width: 180px;
+  position: sticky;
+  padding: 1rem;
+  top: 1rem;          /* how far from the top of the viewport it "sticks" */
+  align-self: flex-start;  /* required — see explanation below */
+  max-height: calc(100vh - 2rem); /* prevents it from being taller than the screen */
+  overflow-y: auto;    /* if the filter list itself is long, it scrolls internally instead of overflowing */
   background: #FAF7F0;
-  padding: 1.25rem;
-  border-radius: 8px;
 }
 
 .heading {
