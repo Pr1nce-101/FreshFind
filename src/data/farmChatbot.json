@@ -91,7 +91,7 @@
         "snap",
         "ebt"
       ],
-      "answer": "Payment options vary by market and vendor, and FreshFind doesn't have confirmed payment details yet. Contact the market to ask whether it accepts cards, cash, SNAP/EBT, or other payment methods."
+      "answer": "Payment options vary by market and vendor, and FreshFind doesn't have confirmed payment details yet. Contact the market to ask whether it accepts cards, cash, or other payment methods."
     },
     {
       "keywords": ["price", "prices", "cost", "how much", "pricing"],
