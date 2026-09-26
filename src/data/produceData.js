@@ -319,7 +319,7 @@ export const produceData = [
   {
     id: 16,
     name: "Pumpkin Seeds (Egusi)",
-    category: "Grains & Seeds",
+    category: "Grains and Seeds",
     image: pumpkinSeed,
     seasonBadge: "In Season Now",
     briefDescription: "Nutritious seeds used for making traditional Egusi soup.",
@@ -339,7 +339,7 @@ export const produceData = [
   {
     id: 17,
     name: "Honey Beans",
-    category: "Grains & Seeds",
+    category: "Grains and Seeds",
     image: beans,
     seasonBadge: "In Season Now",
     briefDescription: "Protein-packed beans with a naturally sweet taste.",
