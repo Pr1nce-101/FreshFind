@@ -4,7 +4,8 @@
     "What produce is available today?",
     "When are tomatoes in season?",
     "How should I store fresh produce?",
-    "Do markets accept cards?"
+    "Which markets are in the directory?",
+    "What categories are in the produce guide?"
   ],
   "fallback": "I don't have that detail in FreshFind yet. Try asking about produce availability, seasons, nutrition, storage, or market visits. For exact prices, hours, and policies, please contact the market directly.",
   "faqs": [
@@ -56,6 +57,65 @@
         "harvest season"
       ],
       "answer": "Seasons vary by crop and region. Ask about a specific fruit or vegetable and I can share the peak-season range listed in the FreshFind produce guide."
+    },
+    {
+      "keywords": [
+        "market directory",
+        "list of markets",
+        "which markets",
+        "all markets",
+        "market names"
+      ],
+      "answer": "The market directory currently lists Wuse Major Market in Wuse Zone 5, Garki Green Market in Garki Area 3, Maitama Fresh Market in Maitama District, Asokoro Farmers Market in Asokoro, Gwarinpa Produce Market in Gwarinpa Estate, Jabi Lakeside Market in Jabi, Lugbe Community Market in Lugbe, Kubwa Family Market in Kubwa, Nyanya Harvest Market in Nyanya, Karu Roadside Market in Karu, Utako Weekend Market in Utako, and Wuye District Market in Wuye."
+    },
+    {
+      "keywords": [
+        "market days",
+        "market schedule",
+        "directory hours",
+        "when are markets open",
+        "what days are markets open"
+      ],
+      "answer": "Listed market schedules are: Wuse Major Market Tue 6:00 AM-1:00 PM and Sat 8:00 AM-6:00 PM; Garki Green Market Tue 6:00 AM-3:00 PM, Wed 6:00 AM-1:00 PM, and Sun 7:00 AM-1:00 PM; Maitama Fresh Market Mon and Tue 7:00 AM-3:00 PM and Sat 6:00 AM-3:00 PM; Asokoro Farmers Market Mon 6:00 AM-3:00 PM, Wed 6:00 AM-6:00 PM, and Thu 7:00 AM-6:00 PM. The remaining listings are available in the market directory, and hours can change, so confirm before traveling."
+    },
+    {
+      "keywords": [
+        "market produce",
+        "what does each market have",
+        "produce by market",
+        "current market produce",
+        "market stock"
+      ],
+      "answer": "The directory lists Wuse Major Market with watermelons and dried stockfish; Garki Green Market with beans and bitter leaf; Maitama Fresh Market with organic spinach and mangoes; Asokoro Farmers Market with organic spinach, watermelons, maize, and fresh catfish; Gwarinpa Produce Market with garden eggs and beans; Jabi Lakeside Market with mint and goat meat; Lugbe Community Market with bitter leaf and goat meat; Kubwa Family Market with goat meat and organic kale; Nyanya Harvest Market with groundnut oil and maize; Karu Roadside Market with organic spinach and tilapia; Utako Weekend Market with pineapples, beef cuts, sorghum, and tomatoes; and Wuye District Market with bitter leaf and organic kale. Stock status may change."
+    },
+    {
+      "keywords": [
+        "market filters",
+        "filter markets",
+        "filter by day",
+        "filter by produce",
+        "market categories"
+      ],
+      "answer": "You can filter the market directory by area, day of the week, and produce type. Available produce types are organic, fruits, vegetables, processed goods, herbs, fish, grains, and meat."
+    },
+    {
+      "keywords": [
+        "produce guide",
+        "guide categories",
+        "produce categories",
+        "what produce is in the guide",
+        "guide items"
+      ],
+      "answer": "The seasonal produce guide has Vegetables, Fruits, Herbs, and Pantry categories. Its current listings are Organic Tomatoes, Crisp Carrots, Wild Strawberries, Crisp Apples, Creamy Avocado, Fresh Basil Leaf, Sweet Bell Pepper, Fresh Broccoli, Sweet Corn, and Cool Cucumber."
+    },
+    {
+      "keywords": [
+        "guide availability",
+        "in season guide",
+        "out of season guide",
+        "what is in stock in the guide"
+      ],
+      "answer": "The guide currently marks Organic Tomatoes, Crisp Carrots, Crisp Apples, Creamy Avocado, Fresh Basil Leaf, Sweet Bell Pepper, Sweet Corn, and Cool Cucumber as in stock. Wild Strawberries and Fresh Broccoli are marked out of season. Availability can change, so confirm with the linked market."
     },
     {
       "keywords": [
