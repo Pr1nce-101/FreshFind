@@ -27,7 +27,7 @@ export default function MobileMenu() {
           <div className="mobile-drawer-content" onClick={(e) => e.stopPropagation()}>
             <ul className="mobile-nav-links" style={{ listStyleType: 'none', padding: 0 }}>
               <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
-              <li><NavLink to="/directory" onClick={closeMenu}>Directory</NavLink></li>
+              <li><NavLink to="/markets" onClick={closeMenu}>Directory</NavLink></li>
               <li><NavLink to="/produce" onClick={closeMenu}>Produce Guide</NavLink></li>
               <li><NavLink to="/about" onClick={closeMenu}>About Us</NavLink></li>
               <li><NavLink to="/contact" onClick={closeMenu}>Contact Us</NavLink></li>
