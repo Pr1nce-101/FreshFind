@@ -4,6 +4,16 @@
   padding: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .pageLayout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    max-width: 100%;
+  }
+}
+
 .results {
   flex: 1;
   display: flex;
@@ -36,7 +46,7 @@
 
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.25rem;
 }
 

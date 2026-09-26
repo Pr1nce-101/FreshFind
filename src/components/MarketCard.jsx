@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { isMarketOpenNow } from "../utils/isOpen";
 import './ProduceMarketBookmark_css/cards.css';
 
 // All possible produce categories a market can display icons for.
@@ -6,11 +7,11 @@ import './ProduceMarketBookmark_css/cards.css';
 const CATEGORY_ICONS = {
   organic: '🌱',
   fruits: '🍎',
-  vegetables: '🥕',
+  vegetables: '🥬',
   processed: '🥫',
-  herbs: '🌿',
+  herbs: '🌶️',
   fish: '🐟',
-  grains: '🌿',
+  grains: '🌾',
   meat: '🥩',
 };
 
@@ -42,7 +43,6 @@ const CATEGORY_ICONS = {
  * 
  *  - onToggleBookmark (fn(market)): This is called when the bookmark button is clicked
  * 
- * note: fn means function
  */
 export default function MarketCard({ market, isBookmarked = false, onToggleBookmark }) {
   const [expanded, setExpanded] = useState(false);
@@ -53,20 +53,25 @@ export default function MarketCard({ market, isBookmarked = false, onToggleBookm
     name,
     image,
     location,
-    openNow,
     hours = [],
     categories = [],
     vendors = [],
     currentProduce = [],
   } = market;
 
+const openNow = isMarketOpenNow(hours);
+console.log(name, hours, openNow);
+  
+
   return (
     <>
-      {/* Card front */}
+      {/* Card fronta */}
       <article className="mc-card">
         <div className="mc-image-wrap">
           <img src={image} alt={name} className="mc-image" />
-          {openNow && <span className="mc-badge">Open Now</span>}
+          <span className={`mc-badge ${openNow ? 'open' : 'closed'}`}>
+            {openNow ? 'Open Now' : 'Closed'}
+          </span>
         </div>
         <div className="mc-body">
           <h3 className="mc-name">{name}</h3>
@@ -104,13 +109,12 @@ export default function MarketCard({ market, isBookmarked = false, onToggleBookm
 
       {/* Expanded full market details */}
       {expanded && (
-        <div
+        <div 
           className="mc-overlay"
           role="dialog"
           aria-modal="true"
           aria-label={`${name} details`}
-          onClick={(e) => e.target === e.currentTarget && setExpanded(false)}
-        >
+          onClick={(e) => e.target === e.currentTarget && setExpanded(false)}>
           <div className="mc-modal">
             <button
               type="button"
@@ -135,8 +139,20 @@ export default function MarketCard({ market, isBookmarked = false, onToggleBookm
             </div>
 
             <div className="mc-modal-body">
-              <h2 className="mc-modal-name">{name}</h2>
-              <p className="mc-location">{location}</p>
+                <h2 className="mc-modal-name">{name}</h2>
+                <p className="mc-location">{location}</p>
+
+                <section className="mc-section">
+                  <h4>Location</h4>
+                  <div className="mc-map-wrap">
+                    <iframe
+                      title={`${name} location`}
+                      className="mc-map"
+                      loading="lazy"
+                      src={`https://www.google.com/maps?q=${encodeURIComponent(location)}&output=embed`}
+                    ></iframe>
+                  </div>
+                </section>
 
               <section className="mc-section">
                 <h4>Operating Hours</h4>
@@ -197,6 +213,7 @@ export default function MarketCard({ market, isBookmarked = false, onToggleBookm
             </div>
           </div>
         </div>
+        
       )}
     </>
   );

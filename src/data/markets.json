@@ -1,10 +1,9 @@
 [
   {
     "id": "m1",
-    "name": "Wuse Central Market",
-    "image": "/images/markets/wuse-central-market.jpg",
+    "name": "Wuse Major Market",
+    "image": "/images/wuse-central-market.png",
     "location": "Wuse Zone 5",
-    "openNow": true,
     "hours": [
       {
         "day": "Tue",
@@ -18,7 +17,6 @@
       }
     ],
     "categories": [
-      "fruits",
       "organic",
       "fish",
       "vegetables"
@@ -48,9 +46,8 @@
   {
     "id": "m2",
     "name": "Garki Green Market",
-    "image": "/images/markets/garki-green-market.jpg",
+    "image": "/images/garki-green-market.png",
     "location": "Garki Area 3",
-    "openNow": true,
     "hours": [
       {
         "day": "Tue",
@@ -103,9 +100,8 @@
   {
     "id": "m3",
     "name": "Maitama Fresh Market",
-    "image": "/images/markets/maitama-fresh-market.jpg",
+    "image": "/images/maitama-fresh-market.png",
     "location": "Maitama District",
-    "openNow": true,
     "hours": [
       {
         "day": "Mon",
@@ -118,7 +114,7 @@
         "close": "3:00 PM"
       },
       {
-        "day": "Sun",
+        "day": "Sat",
         "open": "6:00 AM",
         "close": "3:00 PM"
       }
@@ -157,7 +153,7 @@
   {
     "id": "m4",
     "name": "Asokoro Farmers Market",
-    "image": "/images/markets/asokoro-farmers-market.jpg",
+    "image": "/images/asokoro-farmers-market.png",
     "location": "Asokoro",
     "openNow": true,
     "hours": [
@@ -179,9 +175,7 @@
     ],
     "categories": [
       "fish",
-      "grains",
-      "organic",
-      "fruits"
+      "organic"
     ],
     "vendors": [
       {
@@ -220,7 +214,7 @@
   {
     "id": "m5",
     "name": "Gwarinpa Produce Market",
-    "image": "/images/markets/gwarinpa-produce-market.jpg",
+    "image": "/images/gwarinpa-produce-market.png",
     "location": "Gwarinpa Estate",
     "openNow": false,
     "hours": [
@@ -274,9 +268,8 @@
   {
     "id": "m6",
     "name": "Jabi Lakeside Market",
-    "image": "/images/markets/jabi-lakeside-market.jpg",
+    "image": "/images/jabi-lakeside-market.png",
     "location": "Jabi",
-    "openNow": true,
     "hours": [
       {
         "day": "Tue",
@@ -291,7 +284,6 @@
     ],
     "categories": [
       "herbs",
-      "grains",
       "fish",
       "meat"
     ],
@@ -325,7 +317,7 @@
   {
     "id": "m7",
     "name": "Lugbe Community Market",
-    "image": "/images/markets/lugbe-community-market.jpg",
+    "image": "/images/lugbe-community-market.png",
     "location": "Lugbe",
     "openNow": false,
     "hours": [
@@ -343,7 +335,6 @@
     "categories": [
       "meat",
       "herbs",
-      "fruits",
       "vegetables"
     ],
     "vendors": [
@@ -376,7 +367,7 @@
   {
     "id": "m8",
     "name": "Kubwa Family Market",
-    "image": "/images/markets/kubwa-family-market.jpg",
+    "image": "/images/kubwa-family-market.png",
     "location": "Kubwa",
     "openNow": true,
     "hours": [
@@ -393,7 +384,8 @@
     ],
     "categories": [
       "organic",
-      "meat"
+      "meat",
+      "processed"
     ],
     "vendors": [
       {
@@ -425,7 +417,7 @@
   {
     "id": "m9",
     "name": "Nyanya Harvest Market",
-    "image": "/images/markets/nyanya-harvest-market.jpg",
+    "image": "/images/nyanya-harvest-market.png",
     "location": "Nyanya",
     "openNow": false,
     "hours": [
@@ -480,7 +472,7 @@
   {
     "id": "m10",
     "name": "Karu Roadside Market",
-    "image": "/images/markets/karu-roadside-market.jpg",
+    "image": "/images/karu-roadside-market.png",
     "location": "Karu",
     "openNow": true,
     "hours": [
@@ -497,7 +489,8 @@
     ],
     "categories": [
       "organic",
-      "fish"
+      "vegetables",
+      "fruits"
     ],
     "vendors": [
       {
@@ -524,7 +517,7 @@
   {
     "id": "m11",
     "name": "Utako Weekend Market",
-    "image": "/images/markets/utako-weekend-market.jpg",
+    "image": "/images/utako-weekend-market.png",
     "location": "Utako",
     "openNow": true,
     "hours": [
@@ -540,8 +533,6 @@
       }
     ],
     "categories": [
-      "meat",
-      "fruits",
       "grains",
       "vegetables"
     ],
@@ -582,7 +573,7 @@
   {
     "id": "m12",
     "name": "Wuye District Market",
-    "image": "/images/markets/wuye-district-market.jpg",
+    "image": "/images/wuye-district-market.png",
     "location": "Wuye",
     "openNow": true,
     "hours": [
@@ -603,7 +594,7 @@
       }
     ],
     "categories": [
-      "organic",
+      "processed",
       "herbs"
     ],
     "vendors": [
@@ -631,7 +622,7 @@
   {
     "id": "m13",
     "name": "Jahi Organic Market",
-    "image": "/images/markets/jahi-organic-market.jpg",
+    "image": "/images/jahi-organic-market.png",
     "location": "Jahi",
     "openNow": false,
     "hours": [
@@ -694,7 +685,7 @@
   {
     "id": "m14",
     "name": "Life Camp Fresh Stop",
-    "image": "/images/markets/life-camp-fresh-stop.jpg",
+    "image": "/images/life-camp-fresh-stop.png",
     "location": "Life Camp",
     "openNow": false,
     "hours": [
@@ -750,7 +741,7 @@
   {
     "id": "m15",
     "name": "Katampe Hilltop Market",
-    "image": "/images/markets/katampe-hilltop-market.jpg",
+    "image": "/images/katampe-hilltop-market.png",
     "location": "Katampe",
     "openNow": false,
     "hours": [
@@ -817,7 +808,7 @@
   {
     "id": "m16",
     "name": "Dutse Alhaji Market",
-    "image": "/images/markets/dutse-alhaji-market.jpg",
+    "image": "/images/dutse-alhaji-market.png",
     "location": "Dutse Alhaji",
     "openNow": true,
     "hours": [
@@ -867,7 +858,7 @@
   {
     "id": "m17",
     "name": "Mabushi Local Market",
-    "image": "/images/markets/mabushi-local-market.jpg",
+    "image": "/images/mabushi-local-market.png",
     "location": "Mabushi",
     "openNow": false,
     "hours": [
@@ -916,7 +907,7 @@
   {
     "id": "m18",
     "name": "Gwagwalada Grain Market",
-    "image": "/images/markets/gwagwalada-grain-market.jpg",
+    "image": "/images/gwagwalada-grain-market.png",
     "location": "Gwagwalada",
     "openNow": false,
     "hours": [
@@ -975,7 +966,7 @@
   {
     "id": "m19",
     "name": "Bwari Village Market",
-    "image": "/images/markets/bwari-village-market.jpg",
+    "image": "/images/bwari-village-market.png",
     "location": "Bwari",
     "openNow": false,
     "hours": [
@@ -1036,7 +1027,7 @@
   {
     "id": "m20",
     "name": "Kuje Countryside Market",
-    "image": "/images/markets/kuje-countryside-market.jpg",
+    "image": "/images/kuje-countryside-market.png",
     "location": "Kuje",
     "openNow": false,
     "hours": [
@@ -1097,7 +1088,7 @@
   {
     "id": "m21",
     "name": "Apo Legislative Market",
-    "image": "/images/markets/apo-legislative-market.jpg",
+    "image": "/images/apo-legislative-market.png",
     "location": "Apo",
     "openNow": true,
     "hours": [
