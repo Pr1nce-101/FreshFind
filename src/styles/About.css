@@ -51,7 +51,7 @@
   gap: 18px;
   align-items: stretch;
 }
-.card {
+article.card {
   background: #ffffff;
   padding: 24px;
   border-radius: 16px;

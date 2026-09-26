@@ -57,7 +57,7 @@ export default function Footer() {
 
           <div className="contact-details">
             <p><span className="icon">📧</span> info@freshfind.com</p>
-            <p><span className="icon">📞</span> +234 801 234 5678</p>
+            <p><span className="icon">📞</span> +234 111 222</p>
           </div>
         </div>
 
