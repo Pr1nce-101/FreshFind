@@ -81,13 +81,21 @@ function Home() {
             <select value={selectedArea} onChange={(e) => setSelectedArea(e.target.value)}>
               <option value="" disabled>Select Area</option>
               <option value="apo">Apo</option>
+              <option value="asokoro">Asokoro</option>
               <option value="dutse">Dutse</option>
               <option value="garki">Garki</option>
               <option value="gwarinpa">Gwarinpa</option>
+              <option value="jabi">Jabi</option>
               <option value="">Kado</option>
+              <option value="karu">Karu</option>
+              <option value="kubwa">Kubwa</option>
               <option value="lifecamp">Lifecamp</option>
               <option value="lugbe">Lugbe</option>
+              <option value="maitama">Maitama</option>
+              <option value="nyanya">Nyanya</option>
+              <option value="utako">Utako</option>
               <option value="wuse">Wuse</option>
+              <option value="wuye">Wuye</option>
             </select>
           </div>
 
@@ -107,6 +115,8 @@ function Home() {
           <div className="search-option">
             <select value={selectedType} onChange={(e) => setSelectedType(e.target.value)}>
               <option value="" disabled>Produce Type</option>
+              <option value="processed">Processed</option>
+              <option value="meat">Meat</option>
               <option value="fish">Fish</option>
               <option value="fruits">Fruits</option>
               <option value="vegetables">Vegetables</option>
