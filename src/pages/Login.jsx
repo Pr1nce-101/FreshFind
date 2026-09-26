@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import "../styles/Login.css";
 import farmersImage from "../assets/farmers.png";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function Login() {
+  
+  const navigate = useNavigate();
   return (
     <div className="login-page">
       <div className="blob blob-gold" />
@@ -54,14 +56,12 @@ export default function Login() {
                 </svg>
               </div>
             </div>
-            <button className="login-btn" type="submit">
+            <button className="login-btn" type="submit" onClick={() => navigate('/home')}>
               Log In
             </button>
           </form>
 
-          <p className="signup-row">
-            Don&apos;t have an account? <a href="#">Sign up</a>
-          </p>
+          
         </section>
 
         <aside className="promo-side">

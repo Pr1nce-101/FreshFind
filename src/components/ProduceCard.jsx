@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import './ProduceMarketBookmark_css/cards.css';
+import "../styles/cards.css";
 export default function ProduceCard({
   produce,
   isBookmarked = false,
   onToggleBookmark,
   onVisitMarket,
 }) {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);3
 
   if (!produce) return null;
 

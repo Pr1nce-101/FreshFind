@@ -133,7 +133,7 @@ function Navbar() {
           </div>
 
         <ul className='nav-links' style={{listStyleType: 'none'}}>
-          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/home">Home</NavLink></li>
           <li><NavLink to="/markets">Directory</NavLink></li>
           <li><NavLink to="/produce">Produce Guide</NavLink></li>
           <li><NavLink to="/about">About Us</NavLink></li>
@@ -151,8 +151,8 @@ function Navbar() {
               <MessageCircle size={18} aria-hidden="true" />
               <span>Ask FreshFind</span>
             </button>
-            <button onClick={() => navigate("/login")} className="btn-login">
-              <b>Login/Register</b>
+            <button onClick={() => navigate("/BookMarks")} className="btn-login">
+              <b>See Bookmarks</b>
             </button>
           </div>
           <MobileMenu /> {/* Render the MobileMenu component */}

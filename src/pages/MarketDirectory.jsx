@@ -1,9 +1,10 @@
 import MarketCard from "../components/MarketCard";
 import FilterBar from "../components/FilterBar";
-import BookMark from "../components/BookMark";
+import { useBookmarks } from "../components/BookmarkContext";
 import { useState } from "react";
 import markets from "../data/markets.json"
 import styles from "../styles/MarketDirectory.module.css"
+
 
 
 export default function MarketDirectory(){
@@ -12,9 +13,8 @@ export default function MarketDirectory(){
     const [days, setDays] = useState([]);
     const AREAS = ["All", ...new Set(markets.map((m) => m.location))];
     const [produceTypes, setProduceTypes] = useState([]);
-    const [sortBy, setSortBy] = useState("Next Open Day");
 
-    // const { bookmarkedIds, toggleBookmark } = useBookmarks();
+    const { isMarketBookmarked, toggleMarketBookmark } = useBookmarks();
     const filteredMarkets = markets
         .filter((m) => area === "All" || m.location === area)
         .filter((m) =>
@@ -24,11 +24,7 @@ export default function MarketDirectory(){
             produceTypes.length === 0 ||
             produceTypes.some((p) => m.categories.includes(p))
         )
-        .sort((a, b) => {
-            if (sortBy === "Alphabetical A-Z") return a.name.localeCompare(b.name);
-            return 0; 
-        });
-
+        
     return(
         <>
         <div className={styles.pageLayout}>
@@ -58,9 +54,9 @@ export default function MarketDirectory(){
                 <MarketCard
                     key={market.id}
                     market={market}
-                    // isBookmarked={bookmarkedIds.includes(market.id)}
-                    // onToggleBookmark={toggleBookmark}
-                />
+                    isBookmarked={isMarketBookmarked(market.id)}
+                    onToggleBookmark={toggleMarketBookmark}
+                    />
                 ))
             )}
             </div>

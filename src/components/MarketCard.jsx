@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { isMarketOpenNow } from "../utils/isOpen";
-import './ProduceMarketBookmark_css/cards.css';
+import '../styles/cards.css';
 
 // All possible produce categories a market can display icons for.
 // Pass these subset in market categories.

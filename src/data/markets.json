@@ -155,7 +155,6 @@
     "name": "Asokoro Farmers Market",
     "image": "/images/asokoro-farmers-market.png",
     "location": "Asokoro",
-    "openNow": true,
     "hours": [
       {
         "day": "Mon",
@@ -906,10 +905,9 @@
   },
   {
     "id": "m18",
-    "name": "Gwagwalada Grain Market",
-    "image": "/images/gwagwalada-grain-market.png",
+    "name": "Gwagwalada Yam Market",
+    "image": "/images/gwagwalada-yam-market.png",
     "location": "Gwagwalada",
-    "openNow": false,
     "hours": [
       {
         "day": "Wed",
