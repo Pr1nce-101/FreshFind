@@ -16,6 +16,11 @@ function Home() {
 
     const [selectedProduce, setSelectedProduce] = useState(null);
     const [marketIndex, setMarketIndex] = useState(0);
+    const [selectedArea, setSelectedArea] = useState('');
+    const [selectedDay, setSelectedDay] = useState('');
+    const [selectedType, setSelectedType] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
+    const [hasSearched, setHasSearched] = useState(false);
     const navigate = useNavigate();
 
     const homepageProduce = [
@@ -35,6 +40,33 @@ function Home() {
     markets.find(market => market.id === 'm1'),  
     ];
 
+    const handleSearch = () => {
+    const dayMap = {
+        monday: 'mon',
+        tuesday: 'tue',
+        wednesday: 'wed',
+        thursday: 'thu',
+        friday: 'fri',
+        saturday: 'sat',
+        sunday: 'sun'
+    };
+
+    const results = markets.filter((market) => {
+        const areaMatch = market.location.toLowerCase().includes(selectedArea);
+
+        const dayMatch = market.hours.some(
+            (hour) => hour.day.toLowerCase() === dayMap[selectedDay]
+        );
+
+        const typeMatch = market.categories.includes(selectedType);
+
+        return areaMatch && dayMatch && typeMatch;
+    });
+
+    setSearchResults(results);
+    setHasSearched(true);
+    };
+
   return (
     <>
     <div className="hero">
@@ -46,7 +78,7 @@ function Home() {
         
         <div className="market-search">
           <div className="search-option">
-            <select defaultValue="">
+            <select value={selectedArea} onChange={(e) => setSelectedArea(e.target.value)}>
               <option value="" disabled>Select Area</option>
               <option value="apo">Apo</option>
               <option value="dutse">Dutse</option>
@@ -60,7 +92,7 @@ function Home() {
           </div>
 
           <div className="search-option">
-            <select defaultValue="">
+            <select value={selectedDay} onChange={(e) => setSelectedDay(e.target.value)}>
               <option value="" disabled>Day of Week</option>
               <option value="monday">Monday</option>
               <option value="tuesday">Tuesday</option>
@@ -73,18 +105,24 @@ function Home() {
           </div>
 
           <div className="search-option">
-            <select defaultValue="">
+            <select value={selectedType} onChange={(e) => setSelectedType(e.target.value)}>
               <option value="" disabled>Produce Type</option>
+              <option value="fish">Fish</option>
+              <option value="fruits">Fruits</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="grains">Grains</option>
+              <option value="organic">Organic</option>
+              <option value="herbs">Herbs</option>
             </select>
           </div>
 
-          <button className="search-button">Search Markets</button>
+          <button className="search-button"  onClick={handleSearch}>Find Market(s)</button>
         </div>
       </div>
     </div>
 
     <div className='section-header'>
-    <h1 className='section-title'>Fresh This Week - Seasonal Produce Guide</h1>
+    <h1 className='section-title'>Popular Nearby Markets</h1>
     <div className='move-buttons'>
         <button className='left-btn' onClick={() => {
         if (marketIndex > 0) {
@@ -221,6 +259,74 @@ function Home() {
                 </p>
             </div>
 
+        </div>
+    </div>
+    )}
+    {hasSearched && (
+    <div
+        className="search-popup-overlay"
+        onClick={(e) => {
+            if (e.target === e.currentTarget) {
+                setSearchResults([]);
+                setHasSearched(false);
+            }
+        }}
+    >
+        <div className="search-popup">
+            <div className="search-popup-header">
+                <h2>Search Results</h2>
+
+                <button
+                    className="search-popup-close"
+                    onClick={() => {
+                        setSearchResults([]);
+                        setHasSearched(false);
+                    }}
+                >
+                    ×
+                </button>
+            </div>
+
+            <div className="search-results">
+        {searchResults.length > 0 ? (
+            searchResults.map((market) => (
+                    <div className="market-card" key={market.id}>
+                        <div className="market-image">
+                            <img
+                                src={market.image}
+                                alt={market.name}
+                                className="market-image-content"
+                            />
+                        </div>
+
+                        <div className="market-info">
+                            <h1 className="market-title">
+                                {market.name}
+                            </h1>
+
+                            <p className="market-hours">
+                                Open {market.hours[0].day} · {market.hours[0].open} - {market.hours[0].close}
+                            </p>
+
+                            <p className="market-location">
+                                <MapPin size={18} className="location-icon" />
+                                {market.location}
+                            </p>
+
+                            <div className="market-tags">
+                                {market.categories.slice(0, 3).map((category) => (
+                                    <p className="tag tag-organic" key={category}>
+                                        {category}
+                                    </p>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                ))
+                    ) : (
+        <p>No markets found matching your search.</p>
+        )}
+            </div>
         </div>
     </div>
     )}
