@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Mobile Menu Styles
+   ========================================================================== */
+
+/* Hide Mobile Hamburger on Desktop Screens */
+.mobile-menu-wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Hide the horizontal desktop links on small screens */
+  .nav-links {
+    display: none !important;
+  }
+
+  /* Show Hamburger Wrapper on Mobile */
+  .mobile-menu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  /* White Hamburger Button for Dark Green Header Background */
+  .hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+  }
+
+  .hamburger-btn .bar {
+    height: 2.5px;
+    width: 100%;
+    background-color: #ffffff; /* White bars to match FreshFind header */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Animated X State */
+  .hamburger-btn.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-btn.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.open .bar:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  /* Full Overlay Drawer */
+  .mobile-drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+  }
+
+  .mobile-drawer-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    max-width: 280px;
+    height: 100vh;
+    background-color: #0d2310; /* Dark green matching header theme */
+    padding: 90px 28px 28px;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-nav-links a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-nav-links a.active {
+    color: #ffbf00; /* Gold highlight for active page */
+  }
+}

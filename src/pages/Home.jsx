@@ -10,10 +10,12 @@ import spinach from '../images/baby-spinach.png';
 import carrots from '../images/heritage-carrots.png';
 import apples from '../images/crisp-apples.png';
 import { produceData } from '../data/produceData';
+import markets from '../data/markets.json';
 
 function Home() {
 
     const [selectedProduce, setSelectedProduce] = useState(null);
+    const [marketIndex, setMarketIndex] = useState(0);
     const navigate = useNavigate();
 
     const homepageProduce = [
@@ -21,6 +23,16 @@ function Home() {
         produceData[1],
         produceData[2],
         produceData[3]
+    ];
+
+    const homepageMarkets = [
+    markets.find(market => market.id === 'm21'), 
+    markets.find(market => market.id === 'm16'),
+    markets.find(market => market.id === 'm2'),
+    markets.find(market => market.id === 'm5'),
+    markets.find(market => market.id === 'm14'),
+    markets.find(market => market.id === 'm7'),
+    markets.find(market => market.id === 'm1'),  
     ];
 
   return (
@@ -73,57 +85,52 @@ function Home() {
 
     <div className='section-header'>
     <h1 className='section-title'>Fresh This Week - Seasonal Produce Guide</h1>
-    <button className='see-more-button' onClick={() => navigate('/markets')}>See more →</button>
+    <div className='move-buttons'>
+        <button className='left-btn' onClick={() => {
+        if (marketIndex > 0) {
+            setMarketIndex(marketIndex - 1);
+        }
+        }}>&lt;</button>
+        <button className='right-btn' onClick={() => {
+        if (marketIndex < homepageMarkets.length - 3) {
+            setMarketIndex(marketIndex + 1);
+        }
+        }}>&gt;</button>
+    </div>
     </div>
     <div className='market-list'>
-        <div className='market-card'>
+    {homepageMarkets.slice(marketIndex, marketIndex + 3).map((market) => (
+        <div className='market-card' key={market.id}>
             <div className='market-image'>
-                <img src={Oakridge} alt="garki market" className='market-image-content'/>
+                <img
+                    src={market.image}
+                    alt={market.name}
+                    className='market-image-content'
+                />
             </div>
+
             <div className='market-info'>
-                <h1>Oakridge Farmers Market</h1>
-                <p className='market-hours'>Open Saturday <li>8AM - 1PM</li></p>
-                <p className='market-location'><MapPin size={18} className='location-icon'/>Downtown <li>1.2 miles away</li></p>
-                <p className='market-review'><Star className='rating-icon' size={15}/> 4.9 (128 reviews)</p>
+                <h1 className='market-title'>{market.name}</h1>
+
+                <p className='market-hours'>
+                     Open {market.hours[0].day} · {market.hours[0].open} - {market.hours[0].close}
+                </p>
+
+                <p className='market-location'>
+                    <MapPin size={18} className='location-icon' />
+                    {market.location}
+                </p>
+
                 <div className='market-tags'>
-                    <p className='tag tag-organic'>Organic</p>
-                    <p className='tag tag-bakery'>Bakery</p>
-                    <p className='tag tag-dairy'>Dairy</p>
+                    {market.categories.slice(0, 3).map((category) => (
+                        <p className='tag tag-organic' key={category}>
+                            {category}
+                        </p>
+                    ))}
                 </div>
             </div>
         </div>
-        <div className='market-card'>
-            <div className='market-image'>
-                <img src={Greenvalley} alt="garki market" className='market-image-content'/>
-            </div>
-            <div className='market-info'>
-                <h1>Green Valley Artisan Market</h1>
-                <p className='market-hours'>Open Sunday <li>9AM - 2PM</li></p>
-                <p className='market-location'><MapPin size={18} className='location-icon'/>Eastside <li>3.5 miles away</li></p>
-                <p className='market-review'><Star className='rating-icon' size={15}/> 4.9 (95 reviews)</p>
-                <div className='market-tags'>
-                    <p className='tag tag-handmade'>Handmade</p>
-                    <p className='tag tag-produce'>Produce</p>
-                    <p className='tag tag-music'>Live Music</p>
-                </div>
-            </div>
-        </div>
-        <div className="market-card">
-            <div className='market-image'>
-                <img src={Riverfront} alt="garki market" className='market-image-content'/>
-            </div>
-            <div className='market-info'>
-                <h1>Riverfront Community Market</h1>
-                <p className='market-hours'>Open Wednesday <li>3PM - 7PM</li></p>
-                <p className='market-location'><MapPin size={18} className='location-icon'/>Riverside <li>4.1 miles away</li></p>
-                <p className='market-review'><Star className='rating-icon' size={15}/> 4.9 (210 reviews)</p>
-                <div className='market-tags'>
-                    <p className='tag tag-organic'>Honey</p>
-                    <p className='tag tag-bakery'>Flowers</p>
-                    <p className='tag tag-dairy'>Pet Friendly</p>
-                </div>
-            </div>
-        </div>
+    ))}
     </div>
 
     <div className='section-header'>

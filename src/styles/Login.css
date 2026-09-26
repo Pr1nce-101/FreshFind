@@ -22,7 +22,7 @@ body {
   background: #fff;
   border-radius: 24px;
   display: flex;
-  
+  flex-direction: row;
   overflow: hidden;
   min-height: 540px;
 }

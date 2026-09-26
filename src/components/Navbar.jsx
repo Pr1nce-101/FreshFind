@@ -7,6 +7,7 @@ import "../styles/fresh.css";
 import "../styles/FarmChat.css";
 import farmChatData from "../data/farmChatbot.json";
 import { produceData } from "../data/produceData";
+import MobileMenu from './MobileMenu.jsx'; // Import the MobileMenu component
 
 const normalizeText = (text) =>
   text
@@ -133,7 +134,6 @@ function Navbar() {
 
         <ul className='nav-links' style={{listStyleType: 'none'}}>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/marketdetails">Find a Market</NavLink></li>
           <li><NavLink to="/directory">Directory</NavLink></li>
           <li><NavLink to="/produce">Produce Guide</NavLink></li>
           <li><NavLink to="/about">About Us</NavLink></li>
@@ -155,6 +155,7 @@ function Navbar() {
               <b>Login/Register</b>
             </button>
           </div>
+          <MobileMenu /> {/* Render the MobileMenu component */}
         </div>
       </nav>
 

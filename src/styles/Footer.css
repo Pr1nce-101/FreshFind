@@ -1,0 +1,198 @@
+/* ==========================================================================
+   FreshFind Site Footer - Desktop & Mobile
+   ========================================================================== */
+
+.site-footer {
+  background-color: #0d2310; /* Deep green matching FreshFind brand header */
+  color: #e2e8f0;
+  padding: 60px 24px 24px;
+  font-family: inherit;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.logo1{
+    align-items: start;
+    height: 70px;
+    width: auto;
+}
+.logo2{
+    align-items: start;
+    height: 40px;
+    width: auto;
+}
+.FF-logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* --------------------------------------------------------------------------
+   Column 1: Brand
+   -------------------------------------------------------------------------- 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.footer-logo .logo-icon {
+  font-size: 1.8rem;
+}
+
+.footer-logo .logo-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+  */
+
+.footer-tagline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.footer-subtext {
+  font-size: 0.88rem;
+  color: #a0aec0;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+/* --------------------------------------------------------------------------
+   Column 2: Quick Links
+   -------------------------------------------------------------------------- */
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.footer-links-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links-col a {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links-col a:hover,
+.footer-links-col a.active {
+  color: #ffbf00; /* Gold accent on hover */
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   Column 3: Socials & Contact
+   -------------------------------------------------------------------------- */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ffbf00;
+  border-color: #ffbf00;
+  color: #0d2310;
+  transform: translateY(-3px);
+}
+
+.contact-details p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #cbd5e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-details .icon {
+  font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------------------------
+   Footer Divider & Bottom Copyright
+   -------------------------------------------------------------------------- */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 40px 0 24px;
+}
+
+.footer-bottom p {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Mobile Responsive Rules (<= 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 40px 20px 20px;
+  }
+
+  /* Stack columns vertically with centered text */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-subtext {
+    max-width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .contact-details p {
+    justify-content: center;
+  }
+
+  .footer-links-col a:hover {
+    transform: none; /* Disable horizontal hover slide on centered mobile text */
+  }
+}

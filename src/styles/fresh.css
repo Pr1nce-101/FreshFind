@@ -72,6 +72,14 @@ nav{
     border-bottom: 2px solid #FFBF00;
 }
 
+/* Hide desktop navigation on mobile */
+@media (max-width: 768px) {
+  /* Select the class or container holding desktop links/chatbot and hide it */
+  .nav-links { 
+    display: none !important;
+  }
+}
+
 .btn-login{
     height: 46px;
     width: 140px;
@@ -89,6 +97,27 @@ nav{
     background-color: #FFBF00;
     transform: translateY(-1px);
 }
+
+/* Reduce Login button size on mobile screens */
+/* Dynamic scaling for login button on smaller screens */
+@media (max-width: 768px) {
+  .btn-login {
+    /* Height scales smoothly between 32px (small phones) and 38px (tablets) */
+    height: clamp(32px, 5vw, 38px);
+    
+    /* Width fits text with dynamic padding instead of fixed 140px */
+    width: auto;
+    padding: 0 clamp(8px, 2.5vw, 14px);
+    
+    /* Font size adjusts smoothly between 0.72rem and 0.85rem */
+    font-size: clamp(0.72rem, 2.2vw, 0.85rem);
+    
+    /* Prevents button text from wrapping onto two lines */
+    white-space: nowrap; 
+  }
+}
+
+/* Home Page Styles */
 body{
     margin: 0;
     padding: 0;
@@ -343,6 +372,14 @@ body{
   color: #2d3748;
 }
 
+.produce-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 40px 40px;
+  flex-wrap: wrap;
+}
+
 .produce-card {
   width: 280px;
   min-height: 440px;
@@ -505,4 +542,26 @@ body{
 
 .see-more-button:hover{
     color: #b45309;
+}
+.left-btn{
+    width: 50px;
+    height: 50px;
+    border: solid thin #b45309;
+    border-radius: 50%;
+    color: #b45309;
+    background-color: #f3e0ca;
+    cursor: pointer;
+}
+.right-btn{
+    width: 50px;
+    height: 50px;
+    border: solid thin #b45309;
+    border-radius: 50%;
+    color: #b45309;
+    background-color: #f3e0ca;
+    cursor: pointer;
+}
+.left-btn:hover, .right-btn:hover{
+    background-color: #d97706;
+    color: #e2e8f0;
 }
