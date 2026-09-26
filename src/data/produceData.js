@@ -8,13 +8,24 @@ import bellPepper from '../images/bellepepper1.jpg';
 import broccoli from '../images/broccoli2.jpg';
 import corn from '../images/corn1.jpg';
 import cucumber from '../images/cuccumber1.jpg';
-
+import lettuce from '../images/lettuce.jpg';
+import ohaLeaves from '../images/ohaLeaves.jpg';
+import yam from '../images/yam.jpg';
+import stockFish from '../images/stockFish.jpg';
+import goatMeat from '../images/goatMeat.jpg';
+import pumpkinSeed from '../images/pumpkinSeed.jpg';
+import beans from '../images/beans.jpg';
+import frozenFish from '../images/frozenFish.jpg';
+import chicken from '../images/chicken.jpg';
+import crayfish from '../images/crayfish.jpg';
+import uguLeaf from '../images/uguLeaf.jpg';
+import bitterLeaf from '../images/bitterLeaf.jpg';
 
 export const produceData = [
   {
     id: 1,
     name: "Organic Tomatoes",
-    category: "Vegetables",
+    category: "Vegetables/Herbs",
     image: tomatoes,
     seasonBadge: "In Season Now",
     briefDescription: "Rich in antioxidants and harvested daily from local organic farms.",
@@ -27,14 +38,14 @@ export const produceData = [
       { label: "Potassium", value: "292 mg" }
     ],
     linkedMarkets: [
-      { id: "m1", name: "Green Valley Organic Market", url: "/markets/m1" },
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" }
+      { id: "m5", name: "Gwarinpa Produce Market", url: "/markets/m5" },
+      { id: "m12", name: "Wuye District Market", url: "/markets/m12" }
     ]
   },
   {
     id: 2,
     name: "Crisp Carrots",
-    category: "Vegetables",
+    category: "Vegetables/Herbs",
     image: carrots,
     seasonBadge: "In Season Now",
     briefDescription: "Sweet, crunchy root vegetables packed with Beta-Carotene.",
@@ -46,7 +57,8 @@ export const produceData = [
       { label: "Vitamin A", value: "119% DV" }
     ],
     linkedMarkets: [
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" }
+      { id: "m1", name: "Wuse Major Market", url: "/markets/m1" },
+      { id: "m16", name: "Dutse Alhaji Market", url: "/markets/m16" }
     ]
   },
   {
@@ -64,10 +76,10 @@ export const produceData = [
       { label: "Fiber", value: "2 g" }
     ],
     linkedMarkets: [
-      { id: "m3", name: "Riverfront Fresh Produce", url: "/markets/m3" }
+      { id: "m3", name: "Maitama Fresh Market", url: "/markets/m3" }
     ]
   },
-{
+  {
     id: 4,
     name: "Crisp Apples",
     category: "Fruits",
@@ -83,8 +95,8 @@ export const produceData = [
       { label: "Vitamin C", value: "14% DV" }
     ],
     linkedMarkets: [
-      { id: "m1", name: "Green Valley Organic Market", url: "/markets/m1" },
-      { id: "m3", name: "Riverfront Fresh Produce", url: "/markets/m3" }
+      { id: "m14", name: "Life Camp Fresh Stop", url: "/markets/m14" },
+      { id: "m8", name: "Kubwa Family Market", url: "/markets/m8" }
     ]
   },
   {
@@ -103,7 +115,7 @@ export const produceData = [
       { label: "Potassium", value: "485 mg" }
     ],
     linkedMarkets: [
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" }
+      { id: "m4", name: "Asokoro Farmers Market", url: "/markets/m4" }
     ]
   },
   {
@@ -121,13 +133,14 @@ export const produceData = [
       { label: "Vitamin K", value: "27% DV" }
     ],
     linkedMarkets: [
-      { id: "m1", name: "Green Valley Organic Market", url: "/markets/m1" }
+      { id: "m13", name: "Jahi Organic Market", url: "/markets/m13" },
+      { id: "m11", name: "Utako Weekend Market", url: "/markets/m11" }
     ]
   },
   {
     id: 7,
     name: "Sweet Bell Pepper",
-    category: "Vegetables",
+    category: "Vegetables/Herbs",
     image: bellPepper,
     seasonBadge: "In Season Now",
     briefDescription: "Vibrant and crunchy bell peppers rich in vitamins.",
@@ -140,14 +153,14 @@ export const produceData = [
       { label: "Vitamin B6", value: "17% DV" }
     ],
     linkedMarkets: [
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" },
-      { id: "m3", name: "Riverfront Fresh Produce", url: "/markets/m3" }
+      { id: "m2", name: "Garki Green Market", url: "/markets/m2" },
+      { id: "m17", name: "Apo Legislative Market", url: "/markets/m17" }
     ]
   },
   {
     id: 8,
     name: "Fresh Broccoli",
-    category: "Vegetables",
+    category: "Vegetables/Herbs",
     image: broccoli,
     seasonBadge: "Out of Season",
     briefDescription: "Nutrient-dense green florets full of essential fiber.",
@@ -160,13 +173,13 @@ export const produceData = [
       { label: "Vitamin C", value: "135% DV" }
     ],
     linkedMarkets: [
-      { id: "m1", name: "Green Valley Organic Market", url: "/markets/m1" }
+      { id: "m15", name: "Katampe Hilltop Market", url: "/markets/m15" }
     ]
   },
   {
     id: 9,
     name: "Sweet Corn",
-    category: "Vegetables",
+    category: "Vegetables/Herbs",
     image: corn,
     seasonBadge: "In Season Now",
     briefDescription: "Tender, sweet golden corn cobs harvested locally.",
@@ -179,14 +192,14 @@ export const produceData = [
       { label: "Magnesium", value: "37 mg" }
     ],
     linkedMarkets: [
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" },
-      { id: "m3", name: "Riverfront Fresh Produce", url: "/markets/m3" }
+      { id: "m7", name: "Lugbe Community Market", url: "/markets/m7" },
+      { id: "m10", name: "Karu Roadside Market", url: "/markets/m10" }
     ]
   },
   {
     id: 10,
-    name: "Cool Cucumber",
-    category: "Vegetables",
+    name: "Cucumber",
+    category: "Vegetables/Herbs",
     image: cucumber,
     seasonBadge: "In Season Now",
     briefDescription: "Refreshing, crisp cucumbers with high water content.",
@@ -199,9 +212,248 @@ export const produceData = [
       { label: "Vitamin K", value: "19% DV" }
     ],
     linkedMarkets: [
-      { id: "m1", name: "Green Valley Organic Market", url: "/markets/m1" },
-      { id: "m2", name: "City Center Farmers Market", url: "/markets/m2" }
+      { id: "m6", name: "Jabi Lakeside Market", url: "/markets/m6" },
+      { id: "m9", name: "Nyanya Harvest Market", url: "/markets/m9" }
+    ]
+  },
+  {
+    id: 11,
+    name: "Crisp Lettuce",
+    category: "Vegetables/Herbs",
+    image: lettuce,
+    seasonBadge: "In Season Now",
+    briefDescription: "Fresh, crisp leafy green perfect for salads and wraps.",
+    fullDescription: "Hydrating and crunchy, harvested daily to ensure maximum freshness for salads and light meals.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "15 kcal" },
+      { label: "Vitamin K", value: "102% DV" },
+      { label: "Water Content", value: "95%" }
+    ],
+    linkedMarkets: [
+      { id: "m3", name: "Maitama Fresh Market", url: "/markets/m3" },
+      { id: "m13", name: "Jahi Organic Market", url: "/markets/m13" }
+    ]
+  },
+  {
+    id: 12,
+    name: "Fresh Oha Leaves",
+    category: "Herbs/Leaves",
+    image: ohaLeaves,
+    seasonBadge: "In Season Now",
+    briefDescription: "Traditional aromatic leaves essential for authentic Oha soup.",
+    fullDescription: "Tender and flavorful green leaves carefully picked for preparing traditional soups.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "30 kcal" },
+      { label: "Fiber", value: "3 g" },
+      { label: "Iron", value: "15% DV" }
+    ],
+    linkedMarkets: [
+      { id: "m1", name: "Wuse Major Market", url: "/markets/m1" },
+      { id: "m2", name: "Garki Green Market", url: "/markets/m2" }
+    ]
+  },
+  {
+    id: 13,
+    name: "Fresh Yam Tuber",
+    category: "Tubers",
+    image: yam,
+    seasonBadge: "In Season Now",
+    briefDescription: "Nutrient-rich staple crop ideal for boiling, mashing, or frying.",
+    fullDescription: "High-quality yam tubers sourced from top agricultural regions, perfect for pounding or boiling.",
+    peakSeasonRange: "August - December",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "118 kcal" },
+      { label: "Carbohydrates", value: "27 g" },
+      { label: "Potassium", value: "816 mg" }
+    ],
+    linkedMarkets: [
+      { id: "m9", name: "Nyanya Harvest Market", url: "/markets/m9" },
+      { id: "m16", name: "Dutse Alhaji Market", url: "/markets/m16" }
+    ]
+  },
+  {
+    id: 14,
+    name: "Stock Fish",
+    category: "Meat & Seafood",
+    image: stockFish,
+    seasonBadge: "Available Year-Round",
+    briefDescription: "Naturally dried fish offering deep, rich umami flavor.",
+    fullDescription: "Premium air-dried stockfish, perfect for enhancing the richness of soups and stews.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "290 kcal" },
+      { label: "Protein", value: "62 g" },
+      { label: "Sodium", value: "150 mg" }
+    ],
+    linkedMarkets: [
+      { id: "m1", name: "Wuse Major Market", url: "/markets/m1" },
+      { id: "m17", name: "Apo Legislative Market", url: "/markets/m17" }
+    ]
+  },
+  {
+    id: 15,
+    name: "Fresh Goat Meat",
+    category: "Meat & Seafood",
+    image: goatMeat,
+    seasonBadge: "Available Year-Round",
+    briefDescription: "Lean and flavorful meat, popular for soups, pepper soup, and suya.",
+    fullDescription: "Freshly dressed, high-quality goat meat cut to order for stews, soups, and specialized dishes.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "143 kcal" },
+      { label: "Protein", value: "27 g" },
+      { label: "Iron", value: "18% DV" }
+    ],
+    linkedMarkets: [
+      { id: "m2", name: "Garki Green Market", url: "/markets/m2" },
+      { id: "m8", name: "Kubwa Family Market", url: "/markets/m8" }
+    ]
+  },
+  {
+    id: 16,
+    name: "Pumpkin Seeds (Egusi)",
+    category: "Grains & Seeds",
+    image: pumpkinSeed,
+    seasonBadge: "In Season Now",
+    briefDescription: "Nutritious seeds used for making traditional Egusi soup.",
+    fullDescription: "Cleaned and shelled seeds packed with healthy fats, ideal for traditional soups and pestos.",
+    peakSeasonRange: "July - November",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "559 kcal" },
+      { label: "Protein", value: "30 g" },
+      { label: "Healthy Fats", value: "49 g" }
+    ],
+    linkedMarkets: [
+      { id: "m10", name: "Karu Roadside Market", url: "/markets/m10" },
+      { id: "m11", name: "Utako Weekend Market", url: "/markets/m11" }
+    ]
+  },
+  {
+    id: 17,
+    name: "Honey Beans",
+    category: "Grains & Seeds",
+    image: beans,
+    seasonBadge: "In Season Now",
+    briefDescription: "Protein-packed beans with a naturally sweet taste.",
+    fullDescription: "Cleaned, high-yield beans perfect for boiling, making bean cakes (Akara), or Moi-Moi.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "347 kcal" },
+      { label: "Protein", value: "21 g" },
+      { label: "Fiber", value: "16 g" }
+    ],
+    linkedMarkets: [
+      { id: "m7", name: "Lugbe Community Market", url: "/markets/m7" },
+      { id: "m16", name: "Dutse Alhaji Market", url: "/markets/m16" }
+    ]
+  },
+  {
+    id: 18,
+    name: "Frozen Fish Mix (Titus, Croaker, Catfish)",
+    category: "Meat & Seafood",
+    image: frozenFish,
+    seasonBadge: "Available Year-Round",
+    briefDescription: "Freshly frozen premium ocean and freshwater fish selection.",
+    fullDescription: "Hygienically frozen Titus (Mackerel), Croaker, and Catfish rich in Essential Omega-3 fatty acids.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "205 kcal" },
+      { label: "Protein", value: "22 g" },
+      { label: "Omega-3", value: "2.5 g" }
+    ],
+    linkedMarkets: [
+      { id: "m6", name: "Jabi Lakeside Market", url: "/markets/m6" },
+      { id: "m12", name: "Wuye District Market", url: "/markets/m12" }
+    ]
+  },
+  {
+    id: 19,
+    name: "Farm Fresh Chicken",
+    category: "Meat & Seafood",
+    image: chicken,
+    seasonBadge: "Available Year-Round",
+    briefDescription: "Tender, high-protein poultry sourced from local farms.",
+    fullDescription: "Freshly prepped poultry suitable for grilling, roasting, boiling, or frying.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "239 kcal" },
+      { label: "Protein", value: "27 g" },
+      { label: "Fat", value: "14 g" }
+    ],
+    linkedMarkets: [
+      { id: "m4", name: "Asokoro Farmers Market", url: "/markets/m4" },
+      { id: "m14", name: "Life Camp Fresh Stop", url: "/markets/m14" }
+    ]
+  },
+  {
+    id: 20,
+    name: "Ground Crayfish",
+    category: "Meat & Seafood",
+    image: crayfish,
+    seasonBadge: "Available Year-Round",
+    briefDescription: "Aromatic dried crayfish used to season traditional dishes.",
+    fullDescription: "Rich in flavor and calcium, ground crayfish acts as an essential seasoning for local dishes.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "87 kcal" },
+      { label: "Protein", value: "18 g" },
+      { label: "Calcium", value: "20% DV" }
+    ],
+    linkedMarkets: [
+      { id: "m5", name: "Gwarinpa Produce Market", url: "/markets/m5" },
+      { id: "m15", name: "Katampe Hilltop Market", url: "/markets/m15" }
+    ]
+  },
+  {
+    id: 21,
+    name: "Fresh Ugu Leaf (Fluted Pumpkin)",
+    category: "Vegetables/Herbs",
+    image: uguLeaf,
+    seasonBadge: "In Season Now",
+    briefDescription: "Nutrient-packed leafy vegetable rich in iron and blood-building properties.",
+    fullDescription: "Vibrant fluted pumpkin leaves (Ugu), widely used for soups, juicing, and stir-fries.",
+    peakSeasonRange: "June - December",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "45 kcal" },
+      { label: "Iron", value: "25% DV" },
+      { label: "Folic Acid", value: "30% DV" }
+    ],
+    linkedMarkets: [
+      { id: "m1", name: "Wuse Major Market", url: "/markets/m1" },
+      { id: "m9", name: "Nyanya Harvest Market", url: "/markets/m9" }
+    ]
+  },
+  {
+    id: 22,
+    name: "Fresh Bitter Leaf",
+    category: "Vegetables/Herbs",
+    image: bitterLeaf,
+    seasonBadge: "In Season Now",
+    briefDescription: "Health-boosting green leaf renowned for medicinal qualities and soup.",
+    fullDescription: "Washed or unwashed bitter leaf harvested fresh, optimal for traditional soups and tonic juices.",
+    peakSeasonRange: "All Year",
+    inStock: true,
+    nutritionalFacts: [
+      { label: "Calories", value: "25 kcal" },
+      { label: "Fiber", value: "4 g" },
+      { label: "Vitamin A", value: "15% DV" }
+    ],
+    linkedMarkets: [
+      { id: "m2", name: "Garki Green Market", url: "/markets/m2" },
+      { id: "m11", name: "Utako Weekend Market", url: "/markets/m11" }
     ]
   }
-
 ];

@@ -8,7 +8,7 @@ export default function ProduceGuide() {
   const [bookmarkedIds, setBookmarkedIds] = useState([]);
   const navigate = useNavigate();
 
-  const categories = ['All', 'Vegetables', 'Fruits', 'Herbs', 'Pantry'];
+  const categories = ['All', 'Vegetables/Herbs', 'Fruits', 'Pantry', 'Meat & Seafood', 'Tubers', 'Grains and Seeds'];
 
   // Filter items by category
   const filteredProduce = selectedCategory === 'All'
